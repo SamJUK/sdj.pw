@@ -1,0 +1,113 @@
+baseURL: https://www.sdj.pw/
+languageCode: en-gb
+title: Technical Blog - SDJ.PW
+description: Welcome to my technical blog, this is primarily a brain dump on various technical topics as a Magento / Devops Engineer.
+theme: ["PaperMod"]
+
+enableRobotsTXT: false
+buildDrafts: true
+buildFuture: true
+buildExpired: true
+
+minify:
+ disableXML: false
+ minifyOutput: false
+
+params:
+  env: development
+  author: Me
+  DateFormat: "January 2, 2006"
+  defaultTheme: auto # dark, light
+  disableThemeToggle: false
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+
+  assets:
+    favicon: "https://www.samdjames.uk/assets/favicon.svg"
+    favicon16x16: "https://www.samdjames.uk/assets/favicon.svg"
+    favicon32x32: "https://www.samdjames.uk/assets/favicon.svg"
+    apple_touch_icon: "https://www.samdjames.uk/assets/favicon.svg"
+    safari_pinned_tab: "https://www.samdjames.uk/assets/favicon.svg"
+
+  label:
+    text: "SDJ.PW"
+    icon: /apple-touch-icon.png
+    iconHeight: 35
+
+  profileMode:
+    enabled: false
+
+  homeInfoParams:
+    Title: "Hi there \U0001F44B"
+    Content: Welcome to my technical blog, this is primarily a brain dump on various technical topics as a Magento / Devops Engineer.
+
+  socialIcons:
+    - name: Stackoverflow
+      url: "https://stackexchange.com/users/14067660/sam?tab=accounts"
+    - name: Github
+      url: "https://github.com/samjuk"
+    - name: Linkedin
+      url: "https://www.linkedin.com/in/samjuk/"
+
+  # analytics:
+  #   google:
+  #     SiteVerificationTag: "XYZabc"
+  #   bing:
+  #     SiteVerificationTag: "XYZabc"
+  #   yandex:
+  #     SiteVerificationTag: "XYZabc"
+
+  cover:
+    hidden: true # hide everywhere but not in structured data
+    hiddenInList: true # hide on list pages and home
+    hiddenInSingle: true # hide on single page
+
+  editPost:
+    URL: "https://github.com/samjuk/sdj.pw/content"
+    Text: "Suggest Changes" # edit text
+    appendFilePath: true # to append file path to Edit link
+
+  # for search
+  # https://fusejs.io/api/options.html
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
+    keys: ["title", "permalink", "summary", "content"]
+
+menu:
+  main:
+    - identifier: categories
+      name: Categories
+      url: /categories/
+      weight: 10
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 20
+    - identifier: example
+      name: Main Site
+      url: https://samdjames.uk
+      weight: 30
+
+outputs:
+  home:
+    - HTML
+    - JSON

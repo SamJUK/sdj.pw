@@ -1,0 +1,11 @@
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+minify:
+ disableXML: true
+ minifyOutput: true
+
+params:
+  env: production

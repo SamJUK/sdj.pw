@@ -1,0 +1,6 @@
+.vs_code/
+.idea/
+.DS_Store
+
+.env
+/public/
