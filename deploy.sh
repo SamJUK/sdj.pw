@@ -16,3 +16,6 @@ fi
 
 echo "[+] Deploying to remote"
 rsync -e "ssh -p $REMOTE_PORT" -azv --delete public/ "$REMOTE_HOST:$REMOTE_PATH"
+
+echo "[+] Flush varnish cache for domain"
+ssh -p$REMOTE_PORT $REMOTE_HOST "sudo /opt/flush_varnish.sh sdj.pw"
