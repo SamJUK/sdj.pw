@@ -80,3 +80,7 @@ jobs:
           REMOTE_HOST: "${{ secrets.REMOTE_HOST }}"
           REMOTE_PATH: "${{ secrets.REMOTE_PATH }}"
           REMOTE_PORT: "${{ secrets.REMOTE_PORT }}"
+          CLOUDFLARE_CACHE_ZONE: "${{ secrets.CLOUDFLARE_CACHE_ZONE }}"
+          CLOUDFLARE_CACHE_TOKEN: "${{ secrets.CLOUDFLARE_CACHE_TOKEN }}"
+          DISCORD_WEBHOOK_ID: "${{ secrets.DISCORD_WEBHOOK_ID }}"
+          DISCORD_WEBHOOK_TOKEN: "${{ secrets.DISCORD_WEBHOOK_TOKEN }}"
