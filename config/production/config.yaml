@@ -9,3 +9,7 @@ minify:
 
 params:
   env: production
+
+services:
+  googleAnalytics:
+    ID: G-LF44HZ9SEM"
