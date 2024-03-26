@@ -4,10 +4,6 @@ date: 2024-01-06T11:30:00+00:00
 tags: ["monitoring", "sentry", "devops"]
 author: "Me"
 draft: false
-editPost:
-    URL: "https://github.com/<path_to_repo>/content"
-    Text: "Suggest Changes" # edit text
-    appendFilePath: true # to append file path to Edit link
 ---
 Frontend monitoring is a crucial part of running online ecommerce stores. Although in a Agency context, a lot of the SaaS options can get expensive quickly especially for smaller merchants. By self hosting Sentry, we can elevate a lot of this cost.
 

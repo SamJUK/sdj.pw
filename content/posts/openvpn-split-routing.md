@@ -4,10 +4,6 @@ date: 2020-11-16T11:30:00+00:00
 tags: ["openvpn", "vpn", "devops"]
 author: "Me"
 draft: false
-editPost:
-    URL: "https://github.com/<path_to_repo>/content"
-    Text: "Suggest Changes" # edit text
-    appendFilePath: true # to append file path to Edit link
 ---
 When setting up a VPN you have the option to either route all traffic through, or only route specific traffic through it. Some of the benefits with split routing within a development team context are:
 - Increased privacy

@@ -4,10 +4,6 @@ date: 2020-11-13T11:30:00+00:00
 tags: ["openvpn", "vpn", "devops"]
 author: "Me"
 draft: false
-editPost:
-    URL: "https://github.com/<path_to_repo>/content"
-    Text: "Suggest Changes" # edit text
-    appendFilePath: true # to append file path to Edit link
 ---
 You can simplify OpenVPN installation by using the OpenVPN installation script by NYR https://github.com/Nyr/openvpn-install
 
