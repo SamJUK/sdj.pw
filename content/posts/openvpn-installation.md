@@ -4,6 +4,9 @@ date: 2020-11-13T11:30:00+00:00
 tags: ["openvpn", "vpn", "devops"]
 author: "Me"
 draft: false
+categories:
+  - openvpn
+  - devops
 ---
 You can simplify OpenVPN installation by using the OpenVPN installation script by NYR https://github.com/Nyr/openvpn-install
 
