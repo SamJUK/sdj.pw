@@ -4,10 +4,6 @@ date: 2024-03-26T11:30:00+00:00
 tags: ["warden", "bedrock", "wordpress", "devops"]
 author: "Me"
 draft: false
-categories:
-  - wordpress
-  - warden
-  - devops
 ---
 The last few years i recently migrated to using [Roots Bedrock](https://roots.io/bedrock/) to bootstrap new wordpress developments. It provides a host of extra features that makes wordpress half decent to work with, such as Composer support, ENV variables, ENV specific config, better directory structure etc. I suggest checking it out if you haven't already.
 

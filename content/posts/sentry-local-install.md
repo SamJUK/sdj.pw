@@ -4,9 +4,6 @@ date: 2024-01-06T11:30:00+00:00
 tags: ["monitoring", "sentry", "devops"]
 author: "Me"
 draft: false
-categories:
-  - sentry
-  - devops
 ---
 Frontend monitoring is a crucial part of running online ecommerce stores. Although in a Agency context, a lot of the SaaS options can get expensive quickly especially for smaller merchants. By self hosting Sentry, we can elevate a lot of this cost.
 

@@ -2,8 +2,6 @@
 title: "Magento 2 DB Schema Diff"
 date: 2023-11-12T11:30:00+00:00
 tags: ["magento2", "db_schema", "debugging"]
-categories:
-  - magento
 author: "Me"
 draft: false
 ---
