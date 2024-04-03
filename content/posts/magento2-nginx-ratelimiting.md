@@ -1,5 +1,6 @@
 ---
-title: "Magento 2 Nginx Rate Limiting"
+title: "Magento 2 - Configuring Nginx Rate Limiting"
+description: "A simple, no nonsense overview on how to configure rate limiting via Nginx for a Magento 2 website. Including IP and UserAgent whitelisting."
 date: 2024-04-03T18:30:00+00:00
 tags: ["magento2", "nginx", "devops"]
 author: "Me"

@@ -1,5 +1,6 @@
 ---
 title: "Local Wordpress Bedrock Development using Warden"
+description: "The secret configuration file you need to implement to get Roots Bedrock working with the warden.dev local environment"
 date: 2024-03-26T11:30:00+00:00
 tags: ["warden", "bedrock", "wordpress", "devops"]
 author: "Me"

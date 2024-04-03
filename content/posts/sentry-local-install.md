@@ -1,5 +1,6 @@
 ---
 title: "Self Hosting Sentry"
+description: "A simple guide on how to get started installing & configuring self hosted Sentry with docker compose."
 date: 2024-01-06T11:30:00+00:00
 tags: ["monitoring", "sentry", "devops"]
 author: "Me"

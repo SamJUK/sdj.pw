@@ -1,5 +1,6 @@
 ---
 title: "OpenVPN Split Routing"
+description: "Increase throughput, security and speed by enabling split routing for OpenVPN. With only a few lines of server configuration."
 date: 2020-11-16T11:30:00+00:00
 tags: ["openvpn", "vpn", "devops"]
 author: "Me"

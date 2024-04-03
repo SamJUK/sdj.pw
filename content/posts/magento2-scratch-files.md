@@ -1,5 +1,6 @@
 ---
-title: "Magento 2 Scratch Files"
+title: "Magento 2 CLI Scratch File"
+description: "Simple Boilerplate code to create a scratch file similar to artisan:tinker. Where you can interactive with the Magento APP over the CLI, instantiate classes with ObjectManager and call methods. Great for single use scripts, or inspecting data / method results."
 date: 2023-02-17T11:30:00+00:00
 tags: ["magento"]
 author: "Me"
