@@ -1,5 +1,6 @@
 ---
-title: "Magento 2 DB Schema Diff"
+title: "Comparing Magento 2 DB Schema Changes"
+description: "Generate a diff report for the difference between the Magento 2 DB Schema in code, and the schema currently deployed."
 date: 2023-11-12T11:30:00+00:00
 tags: ["magento2", "db_schema", "debugging"]
 author: "Me"
