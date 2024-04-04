@@ -1,7 +1,7 @@
 baseURL: https://www.sdj.pw/
 languageCode: en-gb
 title: Technical Blog - SDJ.PW
-description: Welcome to my technical blog, this is primarily a brain dump on various technical topics as a Magento / Devops Engineer.
+description: Welcome to SDJ.PW, my technical blog. That covers topics from DevOps/SRE tasks to Magento Development and everything in between.
 theme: ["PaperMod"]
 
 enableRobotsTXT: false
@@ -52,7 +52,7 @@ params:
 
   homeInfoParams:
     Title: "Hi there \U0001F44B"
-    Content: Welcome to my technical blog, this is primarily a brain dump on various technical topics as a Magento / Devops Engineer.
+    Content: Welcome to my technical blog, that covers topics from DevOps/SRE tasks to Magento Development and everything in between.
 
   socialIcons:
     - name: Stackoverflow
