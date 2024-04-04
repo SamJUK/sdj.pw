@@ -6,9 +6,11 @@ tags: ["magento2", "db_schema", "debugging"]
 author: "Me"
 draft: false
 ---
-Recently I came across an issue on a site where the `setup:db:status` would constantly report `Declarative Schema is not up to date` even after consecutive runs. Which was breaking the zero downtime deployments configured for the store. 
+Recently I came across an issue on a site where the `setup:db:status` would constantly report `Declarative Schema is not up to date` even after consecutive runs. This was breaking the zero downtime deployment configuration for the store, as the CD process always saw DB updates to process.
 
-In our case by using the script below we got the following output. Which we was able to attribute to error to the Amasty Rewards module, which was deferred to Amasty to resolve.
+There seemed to be (at least at the time of writing) very little information / tooling on how to debug db schema issues. So after a bunch of reverse engineering Magento's implementation of DB Schema, I ended up creating a simple script that compares the current DB schema with the current configuration in the compiled `db_schema.xml`. 
+
+The script that I created gave us the following output, which allowed me to attribute the bug to the Amasty Rewards module. And after a quick support ticket, we was able to get this resolved in a timely manner.
 ```
 Table ID: 409
   Operation: add_column
@@ -19,7 +21,12 @@ Table ID: 409
       - TableName: amasty_rewards_rewards
 ```
 
-After some reverse engineering of the DB Schema code, I came up with the following script that can be placed at the Magento root. It will give us all the DB changes that the system thinks are happening.
+## The Script
+
+To use the script, you can place the following code in a PHP file within the Magento root (where the composer files are located). Then you can run the file name with CLI php.
+
+I like to prefix the files with `z_` to easily distinguish between core Magento files and temporary scripts that need to be cleaned up. 
+
 ```php
 <?php
 #
