@@ -1,7 +1,7 @@
 ---
 title: "Magento 2 Warden PHP SPX Configuration"
 description: ""
-date: 2024-05-23T19:00:00+00:00
+date: 2024-05-23T18:00:00+00:00
 tags: ["magento2", "devops", "performance", "warden"]
 author: "Me"
 draft: false
