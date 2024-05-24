@@ -15,9 +15,9 @@ In the meantime while we wait for the PR to merge, I've created the following sh
 
 ## Quick Start
 ### Option 1 - Single use script
-Great option for testing and evaluating PHP-SPX
+Great option for testing and evaluating PHP-SPX, running this on the host from the warden project root
 ```sh
-curl https://gist.githubusercontent.com/SamJUK/b3becaf6723acf4208eb5b8d92ef24f4/raw/f93afe910067417f55efb8d15bf5f73232fde1a9/warden_install_spx.sh > ~/warden-install-spx.sh
+curl https://gist.githubusercontent.com/SamJUK/b3becaf6723acf4208eb5b8d92ef24f4/raw/f93afe910067417f55efb8d15bf5f73232fde1a9/warden_install_spx.sh | sh
 ```
 
 &nbsp;
