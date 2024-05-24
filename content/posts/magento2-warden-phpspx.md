@@ -1,6 +1,6 @@
 ---
-title: "Magento 2 Warden PHP SPX Configuration"
-description: ""
+title: "How to install & configure PHP SPX in Warden for Magento 2"
+description: "A simple installer script to allow you to setup and configure PHP SPX in a Warden environment for Magento 2"
 date: 2024-05-23T18:00:00+00:00
 tags: ["magento2", "devops", "performance", "warden"]
 author: "Me"

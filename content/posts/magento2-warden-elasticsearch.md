@@ -1,6 +1,6 @@
 ---
-title: "Magento 2 - Elasticsearch 8 _id indices in Warden"
-description: ""
+title: "Magento 2 - Elasticsearch 8 Fixing _id disallowed indices in Warden"
+description: "The single configuration option you need to set to solve the 'Fielddata access on the _id field is disallowed' error within Magento 2 with Warden"
 date: 2024-04-24T19:30:00+00:00
 tags: ["magento2", "elasticsearch", "elasticsearch8", "warden"]
 author: "Me"

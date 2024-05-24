@@ -1,5 +1,5 @@
 ---
-title: "Magento 2 - Elasticsearch 8 Missing Products"
+title: "Magento 2 - Fixing Missing Products with Elasticsearch 8"
 description: "Have your upgrade to Elasticsearch8 gone pair shaped? This short post will get you back up and running with 5 minutes."
 date: 2024-04-24T19:00:00+00:00
 tags: ["magento2", "elasticsearch", "elasticsearch8"]
