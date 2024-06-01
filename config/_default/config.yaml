@@ -36,15 +36,15 @@ params:
   tocopen: false
 
   assets:
-    favicon: "https://www.samdjames.uk/assets/favicon.svg"
-    favicon16x16: "https://www.samdjames.uk/assets/favicon.svg"
-    favicon32x32: "https://www.samdjames.uk/assets/favicon.svg"
-    apple_touch_icon: "https://www.samdjames.uk/assets/favicon.svg"
-    safari_pinned_tab: "https://www.samdjames.uk/assets/favicon.svg"
+    favicon: "assets/favicon.svg"
+    favicon16x16: "assets/favicon.svg"
+    favicon32x32: "assets/favicon.svg"
+    apple_touch_icon: "assets/favicon.svg"
+    safari_pinned_tab: "assets/favicon.svg"
 
   label:
     text: "SDJ.PW"
-    icon: /apple-touch-icon.png
+    icon: /assets/apple-touch-icon.png
     iconHeight: 35
 
   profileMode:
