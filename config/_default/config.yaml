@@ -86,6 +86,10 @@ params:
 
 menu:
   main:
+    - identifier: about
+      name: About Me
+      url: /about/
+      weight: 10
     - identifier: tags
       name: Tags
       url: /tags/

@@ -1,0 +1,42 @@
+{{- define "main" }}
+
+<div class="about-wrapper">
+    <section id="me">
+        <h1 class="title"><b>Hi</b>, my name is <b class="pink">Sam</b></h1>
+        <h2 class="subtitle">I am a Lead Magento Engineer <br>Specialising in <b>Performance</b> and <b>Site Reliability</b></h2>
+
+        <div class="action-set">
+            <a class="button" href="mailto:sam@samdjames.uk?subject=SDJ.PW%20Contact%20Action"><span>Email Me</span></a>
+        </div>
+
+        <p>Working from the United Kingdom timezone. Currently between both <b>Portsmouth</b>, Hampshire and <b>Cardiff</b>, South Wales.</p>
+        <p>With close to 10 years professional experience working across primarily Magento 1 and Magento 2 projects. With some Laravel, Shopify and React projects sprinkled in.</p>
+
+        <h3 class="section-heading">Key Projects</h3>
+        <ul>
+            <li>Designed and implemented Zero Downtime Deployments (ZDD) for Magento 2 to replace the existing process (SSH and Git pull on production servers)</li>
+            <li>Improved release consistency, quality and velocity with CI/CD pipelines with Quality Gates (APM, Web Vitals, Security, Reviews etc)</li>
+            <li>Empheral (Feature) hosts & Local development environments implemented with Warden.dev (a Docker compose abstraction)</li>
+            <li>Centralized backup solution featuring cold store distribution, lifecycle management, alerting and UAC.</li>
+            <li>CLI tooling to allow for local and QA environments to regularly sync with recent anonymised production artifacts (and raw based on UAC).</li>
+            <li>Development and implementation of a robust Cypress automated testing suite tailed to individual stores and feature sets.</li>
+        </ul>
+    </section>
+
+    <section id="scout">
+        <div class="profile-image">
+            <img src="/images/scout-profile.png" alt="" />
+            <p>Scout</p>
+        </div>
+
+        <p>Outside of the mundane software world, I have a 1 year old Belgian Malinois called <b class="pink">Scout</b>. Who is currently in the process of tackling a Mantrailing certification, ahead of being a quality Search and Rescue pair.</p>
+
+        <div class="image-row">
+            <img src="/images/scout-1.png" alt="">
+            <img src="/images/scout-2.png" alt="">
+            <img src="/images/scout-3.png" alt="">
+        </div>
+    </section>
+</div>
+
+{{- end }}{{/* end main */}}
