@@ -9,3 +9,7 @@
 .pink {
     color: var(--pink);
 }
+
+a:not(.terms-tags a, .pagination a, .button):hover {
+  color: var(--pink);
+}

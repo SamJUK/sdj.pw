@@ -1,0 +1,13 @@
+.social-icons a:hover svg {
+  transform: scale(1.25) rotate(2deg);
+  stroke: var(--pink);
+}
+
+article.post-entry:hover {
+    transform: scale(1.05);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, .04);
+}
+
+article.post-entry:hover h2 {
+    color: var(--pink);
+}
