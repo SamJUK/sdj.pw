@@ -150,6 +150,30 @@ main:has(.about-wrapper) {
     border-radius: 100%;
     background: black;
     display: inline-block;
+    animation: profile-wiggle .8s ease-in-out 1 normal forwards;
+}
+
+@keyframes profile-wiggle {
+
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+
+  10% {
+    transform: scale(1.02) rotate(2deg);
+  }
+
+  27% {
+    transform: scale(1.06) rotate(-4deg);
+  }
+
+  42% {
+    transform: scale(1.08) rotate(1deg);
+  }
+
+  100% {
+    transform: scale(1.25) rotate(5deg);
+  }
 }
 
 .about-wrapper .profile-image p {
