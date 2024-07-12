@@ -12,6 +12,8 @@ So I highly encourage you to make sure the patch is applied (its simple, a singl
 
 Now, onto check if your store is vulnerable. Over on [Github at SamJUK/cosmicsting-validator](https://github.com/SamJUK/cosmicsting-validator) I've released the POC we've used alongside a bash script to easily check across all the domains you host. We caught a few instances that we missed (public available demo stores & development sites) after piping in our exported DNS records.
 
+Alongside the above, I've also released a validator over at [https://cosmicsting.samdjames.uk/](https://cosmicsting.samdjames.uk/)
+
 ### How do I patch CosmicSting (CVE-2024-34102)
 That is fairly simple, and can be accomplished by applying the following diff. You can even apply this patch directly on the server via the `patch` tool by running `patch -p1 < /the/path/to/the/patch.diff`. Although typically we would apply this with the `cweagans/composer-patches`.
 
