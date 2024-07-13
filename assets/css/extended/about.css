@@ -85,6 +85,10 @@ main:has(.about-wrapper) {
     transition: 0.1s ease;
 }
 
+.dark .about-wrapper .action-set .icon svg {
+    fill: var(--about-txt-clr);
+}
+
 .about-wrapper .action-set .icon:hover svg,
 .about-wrapper .action-set .icon:focus-within svg {
     fill: var(--pink);
