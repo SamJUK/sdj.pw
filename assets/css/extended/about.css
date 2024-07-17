@@ -1,15 +1,10 @@
 html:has(.about-wrapper) {
-    --nav-width: 1400px;
     --about-txt-clr: #333333;
 }
 
 html:has(.dark .about-wrapper) {
     --primary: #ffffff;
     --about-txt-clr: #cbcbcb;
-}
-
-main:has(.about-wrapper) {
-    max-width: calc(var(--nav-width) + var(--gap)* 2);
 }
 
 .about-wrapper {

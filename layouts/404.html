@@ -1,0 +1,15 @@
+{{ define "main" }}
+  <div class="layout--extrawide four_oh_four">
+    <div class="img">
+      <img src="/images/404.jpg" />
+    </div>
+    <div class="text">
+      <h1>This Page Has Been Stolen</h1>
+          <p>It looks like the page you are requesting has been stolen by a little rascal. You can try using one of the following links which may help you find the right content.</p>
+      <div class="action-set">
+          <p><a href="{{ .Site.Home.RelPermalink }}">Return to the home page</a></p>
+          <p><a href="/tags/">Go to the tags page</a></p>
+      </div>
+    </div>
+  </div>
+{{ end }}

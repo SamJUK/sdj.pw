@@ -13,3 +13,11 @@
 a:not(.terms-tags a, .pagination a, .button):hover {
   color: var(--pink);
 }
+
+html:has(.layout--extrawide) {
+    --nav-width: 1400px;
+}
+
+main:has(.layout--extrawide) {
+    max-width: calc(var(--nav-width) + var(--gap) * 2);
+}
