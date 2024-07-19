@@ -1,7 +1,7 @@
 ---
 title: "OpenVPN Quick Installation"
 date: 2020-11-13T11:30:00+00:00
-tags: ["openvpn", "vpn", "devops"]
+tags: ["openvpn", "devops"]
 author: "Me"
 draft: false
 ---
@@ -13,7 +13,7 @@ wget https://github.com/Nyr/openvpn-install/raw/master/openvpn-install.sh -O ~/o
 bash ~/openvpn-install.sh
 ```
 
-Default options you can choose are: 
+Default options you can choose are:
 - UDP Protocol
 - Port 1194
 - DNS Server 1.1.1.1

@@ -2,7 +2,7 @@
 title: "Magento 2 - Fixing Missing Products with Elasticsearch 8"
 description: "Have your upgrade to Elasticsearch8 gone pair shaped? This short post will get you back up and running with 5 minutes."
 date: 2024-04-24T19:00:00+00:00
-tags: ["magento2", "elasticsearch", "elasticsearch8"]
+tags: ["magento2", "elasticsearch"]
 author: "Me"
 draft: false
 ---
@@ -32,7 +32,7 @@ php bin/magento config:set catalog/search/elasticsearch8_server_hostname 15
 ```
 
 ### Missing Elasticsearch8 Package
-Magento 2.4.6, 2.4.7 does not ship with the Elasticsearch8 package for some reason, despite being the only supported version! 
+Magento 2.4.6, 2.4.7 does not ship with the Elasticsearch8 package for some reason, despite being the only supported version!
 
 If you don't have the package installed already (usually `./vendor/magento/module-elasticsearch-8/`). Then include it within your composer file
 ```sh
@@ -52,7 +52,7 @@ indices:
 This can be tested for by looking for a error message in your Elasticsearch logs similar to `Fielddata access on the _id field is disallowed, you can re-enable it by updating the dynamic cluster setting: indices.id_field_data.enabled"`
 
 ### Elasticsearch XPack SSL Security
-Elasticsearch 8 ships with stronger security defaults, you can disable this temporarily to get your store back up and running while you investigate implementing it properly. 
+Elasticsearch 8 ships with stronger security defaults, you can disable this temporarily to get your store back up and running while you investigate implementing it properly.
 
 Todo this either edit your elasticsearch config file `/etc/elasticsearch/elasticsearch.yml` or provide the keys in environment variables to Elasticsearch, with the following config
 ```
@@ -63,7 +63,7 @@ xpack.security.transport.ssl.enabled: false
 ```
 
 ### Index not supported
-If you are switching between versions of Elasticsearch, you may encounter an error where your current version of Elasticsearch might not be able to read the indexes of an older version. We find this most prevalent within local development environments. All you need todo is drop your old index data and trigger a reindex. An example for this, if your using [Warden](https://warden.dev) is: 
+If you are switching between versions of Elasticsearch, you may encounter an error where your current version of Elasticsearch might not be able to read the indexes of an older version. We find this most prevalent within local development environments. All you need todo is drop your old index data and trigger a reindex. An example for this, if your using [Warden](https://warden.dev) is:
 ```
 warden env elasticsearch down -v
 warden env up

@@ -2,13 +2,13 @@
 title: "Local Wordpress Bedrock Development using Warden"
 description: "The secret configuration file you need to implement to get Roots Bedrock working with the warden.dev local environment"
 date: 2024-03-26T11:30:00+00:00
-tags: ["warden", "bedrock", "wordpress", "devops"]
+tags: ["warden", "wordpress", "devops", "docker"]
 author: "Me"
 draft: false
 ---
 The last few years i recently migrated to using [Roots Bedrock](https://roots.io/bedrock/) to bootstrap new wordpress developments. It provides a host of extra features that makes wordpress half decent to work with, such as Composer support, ENV variables, ENV specific config, better directory structure etc. I suggest checking it out if you haven't already.
 
-Anyway, since I mostly focus on Magento development. My goto local dev environment is [Warden](https://warden.dev) which does support standard Wordpress out the box, along with a few other PHP frameworks. Although there is a tiny bit of undocumented configuration to get Bedrock working properly. 
+Anyway, since I mostly focus on Magento development. My goto local dev environment is [Warden](https://warden.dev) which does support standard Wordpress out the box, along with a few other PHP frameworks. Although there is a tiny bit of undocumented configuration to get Bedrock working properly.
 
 ## Configuration
 

@@ -2,7 +2,7 @@
 title: "Finding Magento 2 Uncacheable Blocks"
 description: "Quick and easily identify what XML blocks are breaking your full page caching, by injecting a small piece of code into any template."
 date: 2023-02-17T11:30:00+00:00
-tags: ["magento", "debugging"]
+tags: ["magento2", "debugging"]
 author: "Me"
 draft: false
 ---

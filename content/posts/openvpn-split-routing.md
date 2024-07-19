@@ -2,7 +2,7 @@
 title: "OpenVPN Split Routing"
 description: "Increase throughput, security and speed by enabling split routing for OpenVPN. With only a few lines of server configuration."
 date: 2020-11-16T11:30:00+00:00
-tags: ["openvpn", "vpn", "devops"]
+tags: ["openvpn", "devops"]
 author: "Me"
 draft: false
 ---
@@ -22,7 +22,7 @@ To configure a IP address to be split routed, for example `1.1.1.1` you would in
 ```
 push "route 1.1.1.1 255.255.255.255 vpn_gateway"
 ```
-You can include multiple push records for all the resources you want to route through the VPN. As well as using CIDR blocks to target whole IP ranges. 
+You can include multiple push records for all the resources you want to route through the VPN. As well as using CIDR blocks to target whole IP ranges.
 
 And finally restart the openvpn server for your changes to take effect.
 

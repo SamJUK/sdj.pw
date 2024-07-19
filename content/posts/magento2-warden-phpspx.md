@@ -2,7 +2,7 @@
 title: "How to install & configure PHP SPX in Warden for Magento 2"
 description: "A simple installer script to allow you to setup and configure PHP SPX in a Warden environment for Magento 2"
 date: 2024-05-23T18:00:00+00:00
-tags: ["magento2", "devops", "performance", "warden"]
+tags: ["magento2", "devops", "performance", "warden", "docker", "debugging"]
 author: "Me"
 draft: false
 ---
@@ -40,7 +40,7 @@ sh ~/warden-install-spx.sh
 - Click the requests you want to view in more detail
 
 ## Usage
-Full usage guide can be found on the PHP-SPX github: https://github.com/NoiseByNorthwest/php-spx 
+Full usage guide can be found on the PHP-SPX github: https://github.com/NoiseByNorthwest/php-spx
 
 ## Script Source Code
 Full source code from the gist, for simplicity of showing what it does
@@ -48,9 +48,9 @@ Full source code from the gist, for simplicity of showing what it does
 #!/usr/bin/env sh
 #
 # A fairly simple shell script to install and configure PHP-SPX within a Warden.dev Environment
-# 
+#
 # Usage:
-#  - Download the script: `curl https://... > ~/warden-install-spx.sh` 
+#  - Download the script: `curl https://... > ~/warden-install-spx.sh`
 #  - Set Permissions on the script `chmod +x ~/warden-install-spx.sh`
 #  - cd to your warden project `cd ~/Projects/magento.test`
 #  - Run the downloaded script `sh ~/warden-install-spx.sh`

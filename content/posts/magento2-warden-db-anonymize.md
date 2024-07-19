@@ -2,7 +2,7 @@
 title: "Anonymizing Magento 2 Databases with Warden"
 description: "A simple guide for anonymizing Magento 2 databases in Warden to either pass off to other developers or move forward into staging/ephemeral environments"
 date: 2024-05-21T19:00:00+00:00
-tags: ["magento2", "warden", "devops"]
+tags: ["magento2", "warden", "devops", "devsecops", "docker"]
 author: "Me"
 draft: false
 ---

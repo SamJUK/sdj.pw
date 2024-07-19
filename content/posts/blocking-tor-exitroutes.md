@@ -2,7 +2,7 @@
 title: "Blocking TOR exit routes"
 description: "How do we go about blocking TOR / Onion traffic to our site?"
 date: 2024-07-22T06:00:00+00:00
-tags: ["security", "sysops", "sre"]
+tags: ["security", "sysops"]
 author: "Me"
 draft: false
 ---

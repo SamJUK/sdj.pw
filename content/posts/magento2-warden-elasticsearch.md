@@ -2,7 +2,7 @@
 title: "Magento 2 - Elasticsearch 8 Fixing _id disallowed indices in Warden"
 description: "The single configuration option you need to set to solve the 'Fielddata access on the _id field is disallowed' error within Magento 2 with Warden"
 date: 2024-04-24T19:30:00+00:00
-tags: ["magento2", "elasticsearch", "elasticsearch8", "warden"]
+tags: ["magento2", "elasticsearch", "warden", "docker"]
 author: "Me"
 draft: false
 ---
@@ -25,4 +25,4 @@ services:
       - indices.id_field_data.enabled=true
 ```
 
-Now restart your warden environment `warden env restart`, followed by a reindex `warden shell -c "php bin/magento index:reindex; php bin/magento c:f"` and voila, you should now have a catalog again! 
+Now restart your warden environment `warden env restart`, followed by a reindex `warden shell -c "php bin/magento index:reindex; php bin/magento c:f"` and voila, you should now have a catalog again!

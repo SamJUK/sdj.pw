@@ -2,7 +2,7 @@
 title: "Quick Start Guide To Self Hosting Sentry.io"
 description: "A simple guide on how to get started installing & configuring self hosted Sentry with docker compose."
 date: 2024-01-06T11:30:00+00:00
-tags: ["monitoring", "sentry", "devops"]
+tags: ["monitoring", "devops"]
 author: "Me"
 draft: false
 ---
@@ -13,7 +13,7 @@ We are using [Hetzner](https://hetzner.cloud/?ref=qW0Iw3EN8gxX) as our host, due
 [The official Sentry Self Hosted Docs](https://develop.sentry.dev/self-hosted/) cover setup, recommended specs, and configure fairly well even if the docs are a little bit jumbled at times.
 
 ## Server Configuration
-Installation is pretty simple, first install docker & docker compose on the machine. 
+Installation is pretty simple, first install docker & docker compose on the machine.
 ```sh
 sudo apt update -y
 sudo apt install apt-transport-https ca-certificates curl software-properties-common
@@ -30,11 +30,11 @@ mkdir -p /opt/sentry
 git clone https://github.com/getsentry/self-hosted.git /opt/sentry
 cd /opt/sentry
 git checkout 24.1.0
-# Make any changes to the configuration files under 
-# /opt/sentry/sentry/config.yml - e.g Google SSO, Slack/Discord Tokens, 
-# /opt/sentry/sentry/sentry.conf.py - e.g Single Org Mode, Sentry Features, Bitbucket Tokens, 
+# Make any changes to the configuration files under
+# /opt/sentry/sentry/config.yml - e.g Google SSO, Slack/Discord Tokens,
+# /opt/sentry/sentry/sentry.conf.py - e.g Single Org Mode, Sentry Features, Bitbucket Tokens,
 sudo ./install.sh --report-self-hosted-issues
 docker compose restart
 ```
 
-Next you can look into configuring a cron to backup the sentry server regularly 
+Next you can look into configuring a cron to backup the sentry server regularly
