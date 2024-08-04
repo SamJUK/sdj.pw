@@ -53,7 +53,7 @@ params:
 
   homeInfoParams:
     Title: "Hi there \U0001F44B"
-    Content: Welcome to my technical blog, that covers topics from DevOps/SRE tasks to Magento Development and everything in between.
+    Content: "Incoherent ramblings from a Principal Magento Engineer. Covering SRE / Devops / Platform Eng / Magento Dev"
 
   socialIcons:
     - name: Stackoverflow

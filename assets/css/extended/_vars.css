@@ -1,3 +1,8 @@
-html {
+:root {
     --pink: #e74799;
+    --main-width: 820px;
+}
+
+:root:has(.post-single) {
+    --main-width: 1024px;
 }
