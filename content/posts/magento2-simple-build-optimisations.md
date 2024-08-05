@@ -1,7 +1,7 @@
 ---
 title: "Magento 2 Optimising Static Content Deploy"
 description: ""
-date: 2024-08-012T05:00:00+00:00
+date: 2024-08-12T05:00:00+00:00
 tags: ["magento2", "devops"]
 author: "Me"
 draft: false
