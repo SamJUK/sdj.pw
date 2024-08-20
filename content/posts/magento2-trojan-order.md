@@ -1,5 +1,5 @@
 ---
-title: "Trojan Order (CVE-2022-24086) - addAfterFilterCallback Orders"
+title: "Magento Trojan Orders (CVE-2022-24086) - addAfterFilterCallback"
 description: "Magento 2 Trojan Orders (CVE-2022-24086) are back, lets talk about how to patch so we are safe. And other identifiers aside from addAfterFilterCallback"
 date: 2024-08-16T11:30:00+00:00
 tags: ["magento2", "security", "devsecops", "magento-cloud", "adobe-commerce"]
