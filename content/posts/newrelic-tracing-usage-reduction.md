@@ -11,7 +11,7 @@ I was doing some health checks on some new brownfield projects we've taken on re
 
 Looking at the "Manage Data" account page in NewRelic. Tracing data dominated the ingest graph, in all the cases it exceeded over 50% of total data and up to 80% in a few stores.
 
-![Newrelic Usage Graph depicting a drop in tracing data](/images/nr_usage_data.png)
+![Newrelic Usage Graph depicting a drop in tracing data](/images/nr_usage_data.jpg)
 
 Recalling a few years back, I remember we had a similar case happen. Where NewRelic changed the default to enabled for distributed tracing in the PHP agent. And its typical to find a lot of NewRelic implementations using the default settings.
 
@@ -31,4 +31,4 @@ newrelic.span_events_enabled = false
 
 A few days after actioning this change, we can see a massive reduction in the amount of data ingested into NewRelic. And if we run into a situation where we would benefit from tracing, its simple enough to re-enable.
 
-![Newrelic Usage Graph depicting a drop in tracing data](/images/nr_tracing_ingest_reduction.png)
+![Newrelic Usage Graph depicting a drop in tracing data](/images/nr_tracing_ingest_reduction.jpg)

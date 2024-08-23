@@ -8,7 +8,7 @@ draft: false
 ---
 A handful of times I have came across pages where full page caching is broken. Instead of diving through and grepping various XML files to identify what module is breaking the cache. I have wrote a section of code, that will identify any uncacheable blocks on the current page and display them in the bottom left of the page.
 
-![Image of the uncachable blocks DOM element the code snippet adds](/images/uncacheable-blocks.png)
+![Image of the uncachable blocks DOM element the code snippet adds](/images/uncacheable-blocks.jpg)
 
 Currently I just paste this into the theme (usually the header or logo phtml files). Although I plan to release this within a more in-depth composer module that also offers a host of other debug related functionality in the future.
 
