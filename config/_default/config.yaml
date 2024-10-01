@@ -97,10 +97,14 @@ menu:
       name: Tags
       url: /tags/
       weight: 20
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 30
     - identifier: example
       name: Main Site
       url: https://samdjames.uk
-      weight: 30
+      weight: 40
 
 outputs:
   home:
