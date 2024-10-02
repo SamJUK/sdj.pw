@@ -37,13 +37,16 @@ Although if you do not have access to these files, you can also just remove the 
 ### Apache
 Credit to [Serfe](https://github.com/Serfe-com) - [Github Comment](https://github.com/magento/magento2/issues/39227#issuecomment-2386758235)
 ```diff
- location ~* ^/setup($|/) {
-     root $MAGE_ROOT;
-     location ~ ^/setup/index.php {
-+        deny all;
-         fastcgi_pass   fastcgi_backend;
+--- setup/.htaccess
++++ setup/.htaccess
+@@ -1,3 +1,6 @@
++Order allow,deny
++Deny from all
++
+ Options -Indexes
 
-         fastcgi_param  PHP_FLAG  "session.auto_start=off \n suhosin.session.cryptua=off";
+ <IfModule mod_rewrite.c>
+
 ```
 
 ### Application
