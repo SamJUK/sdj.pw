@@ -7,8 +7,8 @@ author: "Me"
 draft: false
 ---
 
-The default Nginx sample configuration, and htaccess files shipped by Magento have the `/setup/` route publicly accessible. 
-And this route displays your current magento version, including patch level. For all prying eyes to see. 
+The default Nginx sample configuration, and htaccess files shipped by Magento have the `/setup/` route publicly accessible.
+And this route displays your current magento version, including patch level. For all prying eyes to see.
 
 Currently this affects all Magento versions up to `2.4.7-p1` (the latest at time of writing), including `2.4-develop`.
 
@@ -36,7 +36,7 @@ Although if you do not have access to these files, you can also just remove the 
 
 ### Apache
 Credit to [Serfe](https://github.com/Serfe-com) - [Github Comment](https://github.com/magento/magento2/issues/39227#issuecomment-2386758235)
-```
+```diff
  location ~* ^/setup($|/) {
      root $MAGE_ROOT;
      location ~ ^/setup/index.php {
