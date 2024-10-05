@@ -113,22 +113,6 @@
 	animation: blink 1.5s infinite;
 }
 
-.t2::before {
-	animation-delay: 0.5s;
-}
-
-.t2::after {
-	animation-delay: 0.5s;
-}
-
-.t3::before {
-	animation-delay: 1s;
-}
-
-.t3::after {
-	animation-delay: 1s;
-}
-
 @keyframes blink {
 	30% {
 		background: rgb(255, 252, 0);
@@ -153,21 +137,25 @@
 .t2::before {
 	top: 98px;
 	left: -103px;
+	animation-delay: 0.5s;
 }
 
 .t2::after {
 	top: 98px;
 	right: -103px;
+	animation-delay: 0.5s;
 }
 
 .t3::before {
 	top: 118px;
 	left: -122px;
+	animation-delay: 1s;
 }
 
 .t3::after {
 	top: 118px;
 	right: -122px;
+	animation-delay: 1s;
 }
 
 .stem {
