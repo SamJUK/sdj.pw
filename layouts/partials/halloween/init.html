@@ -1,0 +1,37 @@
+<style>
+    :root:root {
+        --pink: #D4713D;
+    }
+    .first-entry.home-info {
+        --gap: 0;
+        min-height: 240px;
+    }
+
+    .footer {
+        padding-bottom: 0;
+    }
+    .halloween-credit {
+        text-align: center;
+        font-size: 12px;
+        color: var(--secondary);
+        text-align: center;
+        line-height: 24px;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+    .halloween-credit a {
+        text-decoration: underline;
+    }
+</style>
+
+{{- partial "halloween/logo.html" . -}}
+{{- partial "halloween/pumpkin.html" . -}}
+{{- partial "halloween/cobweb.html" . -}}
+
+<div class="halloween-credit">
+    <p>Pumpkin Cat: <a taget="_BLANK" rel="noopener" href="https://codepen.io/medrupaloscil/pen/YzzEvjx">medrupaloscil</a></p>
+    <p>Ghosts: <a taget="_BLANK" rel="noopener" href="https://codepen.io/ShopifyPartners/pen/PGyGOx">Shopify</a></p>
+    <p>Cobwebs: <a taget="_BLANK" rel="noopener" href="https://codepen.io/ShopifyPartners/pen/QKzgvp">Shopify</a></p>
+</div>

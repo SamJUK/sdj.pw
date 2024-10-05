@@ -1,0 +1,781 @@
+<style>
+/* Pumpkin */
+.pumpkin-wrapper {
+    width: 100vw;
+    left: 50vw;
+    transform: translateX(-50%);
+    bottom: 0;
+    position: fixed;
+    max-width: calc((var(--main-width) + var(--gap)* 2) + 360px);
+    z-index: -1;
+}
+
+.pumpkin, .pumpkin *, .pumpkin *::before, .pumpkin *::after {
+	box-sizing: content-box;
+}
+
+.pumpkin {
+	/* Colors */
+	--border-light: #2E2943;
+	--border-pumpkin: #B2502E;
+	--border: #160A36;
+	--pumpkin-light: #EA9F5C;
+	--pumpkin-lighter: #E8BB6C;
+	--pumpkin-inside: #492839;
+	--pumpkin: #D4713D;
+	--cat-light: #7F6668;
+	--cat: #5C4A56;
+    --ear: #E89C93;
+	--leaf-light: #CD4B4D;
+	--leaf: #9C383D;
+    transform: scale(.4);
+	position: relative;
+    margin-left: 60px;
+	position: fixed;
+	right: 50px;
+    bottom: 80px;
+	z-index: -1;
+}
+.pumpkin *, .pumpkin *:before, .pumpkin *:after {
+	content: "";
+	position: absolute;
+}
+.pumpkin .part-1 {
+	top: -100px;
+	left: -200px;
+	width: 150px;
+	height: 200px;
+	background-color: var(--pumpkin);
+	border: 8px solid var(--border);
+	border-radius: 50% / 60%;
+}
+.pumpkin .part-2 {
+	top: -90px;
+	left: -150px;
+	width: 160px;
+	height: 220px;
+	background-color: var(--pumpkin);
+	border-radius: 60% / 50%;
+}
+.pumpkin .part-2:before {
+	width: 160px;
+    height: 240px;
+    border-radius: 50%;
+    border: 6px solid transparent;
+    border-left-color: var(--border-pumpkin);
+    left: 2px;
+    top: -21px;
+}
+.pumpkin .part-2:after {
+    width: 60px;
+    height: 220px;
+    border-radius: 50%;
+    border: 6px solid transparent;
+    border-left-color: var(--border-pumpkin);
+    left: 95px;
+    top: -6px;
+}
+.pumpkin .part-3 {
+	top: -90px;
+	left: -80px;
+	width: 160px;
+	height: 220px;
+	background-color: var(--pumpkin);
+	border-radius: 60% / 50%;
+}
+.pumpkin .part-3:before {
+    width: 90px;
+    height: 225px;
+    border-radius: 50%;
+    border: 6px solid transparent;
+    border-right-color: var(--border-pumpkin);
+    right: 20px;
+    top: -11px;
+}
+.pumpkin .part-4 {
+	top: -100px;
+	left: -40px;
+	width: 150px;
+	height: 200px;
+	background-color: var(--pumpkin);
+	border: 8px solid var(--border);
+	border-radius: 50% / 60%;
+}
+.pumpkin .part-4:before {
+    z-index: 1;
+    width: 112px;
+    height: 70px;
+    border-radius: 50%;
+    border: 8px solid transparent;
+    border-bottom-color: var(--border);
+    top: 140px;
+    left: -108px;
+    transform: rotate(7deg);
+}
+.pumpkin .part-4:after {
+    z-index: 1;
+    width: 114px;
+    height: 60px;
+    border-radius: 50%;
+    border: 8px solid transparent;
+    border-bottom-color: var(--border);
+    top: 149px;
+    left: -26px;
+    transform: rotate(-7deg);
+}
+.pumpkin .mouth-shadow {
+	height: 72px;
+    width: 134px;
+    border-radius: 50%;
+    border: solid transparent;
+    border-width: 0 15px 42px;
+    border-bottom-color: var(--border);
+    top: -18px;
+    left: -117px;
+}
+.pumpkin .mouth-shadow:before {
+        width: 41px;
+    height: 31px;
+    border-radius: 50%;
+    background-color: var(--border);
+    top: 65px;
+    left: -11px;
+    transform: rotate(20deg) skewX(27deg);
+}
+.pumpkin .mouth-shadow:after {
+    width: 41px;
+    height: 31px;
+    border-radius: 50%;
+    background-color: var(--border);
+    top: 64px;
+    left: 103px;
+    transform: rotate(-60deg) skewX(18deg);
+}
+.pumpkin .mouth {
+	height: 60px;
+	width: 120px;
+	border-radius: 50%;
+	border: solid transparent;
+	border-width: 0 15px 30px;
+	border-bottom-color: var(--pumpkin-inside);
+	left: -110px;
+}
+.pumpkin .mouth:before {
+    width: 29px;
+    height: 21px;
+    border-radius: 50%;
+    background-color: var(--pumpkin-inside);
+    top: 51px;
+    left: -11px;
+    transform: rotate(20deg) skewX(16deg);
+}
+.pumpkin .mouth:after {
+    width: 29px;
+    height: 21px;
+    border-radius: 50%;
+    background-color: var(--pumpkin-inside);
+    top: 51px;
+    left: 102px;
+    transform: rotate(-53deg) skewX(16deg);
+}
+.pumpkin .teeth:before {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: var(--pumpkin);
+    border: 6px solid transparent;
+    border-color: transparent transparent var(--border) var(--border);
+    transform: rotate(-37deg);
+    top: 37px;
+    left: -84px;
+}
+.pumpkin .teeth:after {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: var(--pumpkin);
+    border: 6px solid transparent;
+    border-color: transparent transparent var(--border) var(--border);
+    transform: rotate(-51deg);
+    top: 38px;
+    left: -18px;
+}
+.pumpkin .eye {
+    width: 0;
+    height: 0;
+    border: solid transparent;
+    border-width: 20px 0 20px 35px;
+    border-left-color: var(--pumpkin-inside);
+    transform: rotate(25deg);
+    top: -10px;
+}
+.pumpkin .eye.left {
+    left: -100px;
+    transform: rotate(35deg);
+}
+.pumpkin .eye:before {
+    width: 6px;
+    height: 38px;
+    background-color: var(--pumpkin-lighter);
+    left: -37px;
+    top: -19px;
+}
+.pumpkin .eye .border {
+    width: 43px;
+    height: 4px;
+    border-radius: 50%;
+    border: 6px solid transparent;
+    border-bottom-color: var(--border);
+    top: -1px;
+    left: -48px;
+    transform: rotate(-31deg);
+}
+.pumpkin .eye .border:before {
+    width: 40px;
+    height: 4px;
+    border-radius: 50%;
+    border: 6px solid transparent;
+    border-bottom-color: var(--border);
+    top: -18px;
+    left: -13px;
+    transform: rotate(123deg);
+}
+.pumpkin .eye .border:after {
+    width: 40px;
+    height: 4px;
+    border-radius: 50%;
+    border: 6px solid transparent;
+    border-bottom-color: var(--border);
+    top: -18px;
+    left: 4px;
+    transform: rotate(238deg);
+}
+.pumpkin .eye.nose {
+    transform: rotate(30deg) scale(0.6);
+    top: 15px;
+    left: -50px;
+}
+
+/* Cat */
+.pumpkin .cat {
+    top: -230px;
+    left: -150px;
+}
+.pumpkin .head {
+    height: 160px;
+    width: 180px;
+    border-radius: 50%;
+    background-color: var(--cat);
+    border: 8px solid var(--border);
+    transform: rotate(20deg) skewX(-6deg);
+    overflow: hidden;
+}
+.pumpkin .head * {
+    transform: skewX(6deg) rotate(-20deg);
+}
+.pumpkin .head:before {
+    width: 120%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: var(--cat-light);
+    top: -20px;
+    left: -50px;
+}
+.pumpkin .cat-eye {
+    height: 30px;
+    width: 25px;
+    border-radius: 50%;
+    background-color: var(--border);
+    z-index: 1;
+    top: 50px;
+    left: 100px;
+    box-shadow: -80px 0 var(--border);
+    animation: 7s blink 1s linear infinite;
+}
+.pumpkin .cat-mouth {
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: var(--border);
+    top: 92px;
+    left: 78px;
+    box-shadow: -10px 12px var(--border), 10px 12px var(--border);
+    transform: skewX(6deg) rotate(-16deg);
+}
+.pumpkin .cat-mouth:before {
+    height: 13px;
+    width: 3px;
+    border-radius: 50%;
+    border: 8px solid transparent;
+    border-right-color: var(--border);
+    left: -14px;
+    top: -7px;
+    transform: rotate(40deg) skewX(-2deg);
+}
+.pumpkin .cat-mouth:after {
+    height: 13px;
+    width: 3px;
+    border-radius: 50%;
+    border: 8px solid transparent;
+    border-left-color: var(--border);
+    left: 3px;
+    top: -7px;
+    transform: rotate(-40deg) skewX(-2deg);
+}
+.pumpkin .ear {
+    height: 0;
+    width: 0;
+    border: solid transparent;
+    border-width: 29px 0 25px 50px;
+    border-left-color: var(--cat-light);
+    top: -14px;
+    left: 29px;
+    transform: rotate(-1deg);
+}
+.pumpkin .ear:before {
+    height: 0;
+    width: 0;
+    border: solid transparent;
+    border-width: 13px 0 13px 23px;
+    border-left-color: var(--border-light);
+    left: -42px;
+    top: -16px;
+}
+.pumpkin .ear:after {
+    height: 0;
+    width: 0;
+    border: solid transparent;
+    border-width: 6px 0 6px 11px;
+    border-left-color: var(--ear);
+    left: -38px;
+    top: -9px;
+}
+.pumpkin .ear .border:before {
+    height: 49px;
+    width: 5px;
+    border-radius: 50%;
+    border: 8px solid transparent;
+    border-left-color: var(--border);
+    left: -58px;
+    top: -36px;
+}
+.pumpkin .ear .border:after {
+    height: 53px;
+    width: 5px;
+    border-radius: 50%;
+    border: 8px solid transparent;
+    border-right-color: var(--border);
+    left: -40px;
+    top: -47px;
+    transform: rotate(-63deg);
+}
+.pumpkin .ear.right {
+    left: 140px;
+    top: 1px;
+    transform: rotate(64deg);
+}
+.pumpkin .neck {
+    width: 110px;
+    height: 18px;
+    background-color: var(--cat);
+    top: 150px;
+    left: 40px;
+}
+.pumpkin .neck:before {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: solid transparent;
+    border-top-color: var(--cat);
+    border-width: 31px 0 0 20px;
+    left: 80px;
+    top: -15px;
+}
+.pumpkin .neck:after {
+    height: 40px;
+    width: 20px;
+    border-radius: 50%;
+    border: 8px solid transparent;
+    border-right-color: var(--border);
+    transform: rotate(-39deg);
+    top: -16px;
+    left: 115px;
+}
+.pumpkin .pattoune {
+    height: 30px;
+    width: 20px;
+    border-radius: 0 0 50% 50%;
+    border: 8px solid var(--border);
+    border-top: 0 transparent;
+    background-color: var(--cat);
+    top: 165px;
+    left: 10px;
+    transform: rotate(30deg);
+    overflow: hidden;
+}
+.pumpkin .pattoune:before {
+    height: 22px;
+    width: 19px;
+    border-radius: 50%;
+    background-color: var(--cat-light);
+    left: -3px;
+    top: 0px;
+}
+.pumpkin .pattoune:after {
+    width: 6px;
+    height: 13px;
+    border-radius: 4px 4px 0 0;
+    background-color: var(--border);
+    top: 20px;
+    left: 2px;
+    transform: rotate(-5deg);
+    box-shadow: 7px 0 var(--border);
+}
+.pumpkin .pattoune.right {
+    top: 170px;
+    left: 80px;
+}
+.pumpkin .pattoune-top {
+    height: 20px;
+    width: 25px;
+    background-color: var(--cat);
+    top: 150px;
+    left: 30px;
+    transform: rotate(28deg);
+}
+.pumpkin .pattoune-top.right {
+    left: 100px;
+    top: 160px;
+}
+.pumpkin .pattoune-top:before {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 8px solid transparent;
+    border-left-color: var(--border);
+    top: -6px;
+    left: -6px;
+    transform: rotate(5deg);
+}
+.pumpkin .pattoune-top.right:before {
+    left: -9px;
+}
+.pumpkin .pattoune-top:after {
+    height: 8px;
+    width: 15px;
+    border-radius: 0 4px 4px 0;
+    background-color: var(--border);
+    transform: rotate(-37deg);
+    top: -5px;
+    left: 2px;
+}
+.pumpkin .pattoune-top.right:after {
+    top: -6px;
+    left: 0;
+}
+.pumpkin .pattoune-bottom {
+    width: 30px;
+    height: 8px;
+    background-color: var(--border);
+    top: 166px;
+    left: 62px;
+    transform: rotate(5deg);
+}
+.pumpkin .pattoune-bottom:before {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: 8px solid transparent;
+    border-left-color: var(--border);
+    transform: rotate(57deg);
+    left: -17px;
+}
+.pumpkin .pattoune-bottom-right {
+    height: 40px;
+    width: 20px;
+    border-radius: 50%;
+    border: 8px solid transparent;
+    border-left-color: var(--border);
+    top: 156px;
+    left: 117px;
+    transform: rotate(54deg);
+}
+.pumpkin .pattoune-bottom-right:before {
+    height: 60px;
+    width: 20px;
+    border-radius: 50%;
+    border: 8px solid transparent;
+    border-left-color: var(--border);
+    transform: rotate(42deg);
+    top: -43px;
+    left: 4px;
+}
+.pumpkin .pattoune-bottom-right:after {
+    height: 30px;
+    width: 20px;
+    border-radius: 50%;
+    border: 8px solid transparent;
+    border-left-color: var(--border);
+    left: 26px;
+    top: -69px;
+}
+.pumpkin .cat .dots {
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: var(--border);
+    left: 187px;
+    top: 170px;
+    box-shadow:
+        23px -17px var(--border),
+        -22px -32px var(--border);
+}
+
+/* Leaf */
+.pumpkin .leaf {
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: var(--border);
+    top: 103px;
+    left: -185px;
+    transform: rotate(55deg);
+}
+.pumpkin .leaf.right {
+    left: 107px;
+    top: 92px;
+    transform: rotateZ(-180deg) rotateX(-180deg) rotate(62deg);
+}
+.pumpkin .leaf:before {
+    width: 20px;
+    height: 3px;
+    border-radius: 50%;
+    border: 8px solid transparent;
+    border-bottom-color: var(--border);
+    top: -14px;
+    left: -5px;
+    transform: rotate(-25deg);
+}
+.pumpkin .leaf .bg {
+    height: 60px;
+    width: 20px;
+    background-color: var(--leaf-light);
+    transform: rotate(53deg);
+    top: -51px;
+    left: 45px;
+}
+.pumpkin .leaf .p1 {
+    height: 25px;
+    width: 18px;
+    background-color: var(--leaf-light);
+    border: solid;
+    border-radius: 50% 50% 0 0;
+    border-color: var(--border) transparent transparent var(--border);
+    border-width: 8px 0 0 8px;
+    top: -42px; /* Yey */
+    left: 20px;
+    transform: rotate(-30deg) skewX(-29deg);
+}
+.pumpkin .leaf .p2 {
+    height: 30px;
+    width: 24px;
+    background-color: var(--leaf-light);
+    border-radius: 50%;
+    top: -48px;
+    left: 42px; /* Yey */
+    transform: rotate(-36deg) skewX(-29deg);
+}
+.pumpkin .leaf .p2:before {
+    width: 7px;
+    height: 17px;
+    background-color: var(--border);
+    transform: skewX(29deg) rotate(46deg);
+    top: -2px;
+}
+.pumpkin .leaf .p2:after {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    border: 8px solid transparent;
+    border-color: var(--border) var(--border) transparent transparent;
+    transform: skewX(19deg);
+    left: 2px;
+    top: -5px;
+}
+.pumpkin .leaf .p3 {
+    height: 27px;
+    width: 18px;
+    background-color: var(--leaf-light);
+    border: solid;
+    border-radius: 0 0 50% 50%;
+    border-color: transparent transparent var(--border) var(--border);
+    border-width: 0 8px 8px 8px;
+    top: -18px;
+    left: 35px;
+    transform: rotate(-33deg) skewX(29deg);
+}
+.pumpkin .leaf .p4 {
+    height: 35px;
+    width: 24px;
+    background-color: var(--leaf-light);
+    border-radius: 50%;
+    top: -34px;
+    left: 64px;
+    transform: rotate(75deg);
+}
+.pumpkin .leaf .p4:before {
+    width: 7px;
+    height: 23px;
+    background-color: var(--border);
+    transform: rotate(1deg);
+    top: 10px;
+    left: 20px;
+}
+.pumpkin .leaf .p4:after {
+    width: 10px;
+    height: 13px;
+    border-radius: 50%;
+    border: 7px solid transparent;
+    border-color: var(--border) var(--border) transparent transparent;
+    top: -4px;
+    left: 3px;
+    transform: rotate(-25deg);
+}
+.pumpkin .leaf .p5 {
+    height: 27px;
+    width: 15px;
+    border-radius: 50% 50% 0 0;
+    background-color: var(--leaf-light);
+    border: 7px solid var(--border);
+    border-bottom-width: 0;
+    top: -61px;
+    left: 73px;
+    transform: rotate(48deg);
+}
+.pumpkin .leaf .dots {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: var(--border);
+    left: 41px;
+    top: -33px;
+    box-shadow:
+        22px -10px var(--border),
+        38px 5px var(--border);
+}
+.pumpkin .leaf .inside {
+    width: 70px;
+    height: 10px;
+    border-radius: 50%;
+    border: 6px solid transparent;
+    border-bottom-color: var(--leaf);
+    top: -37px;
+    left: 14px;
+    transform: rotate(-35deg);
+}
+.pumpkin .leaf .inside:before {
+    width: 6px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: var(--leaf);
+    top: 7px;
+    left: 65px;
+}
+.pumpkin .leaf .inside:after {
+    width: 10px;
+    height: 14px;
+    border-radius: 50%;
+    border: 6px solid transparent;
+    border-left-color: var(--border);
+    left: -4px;
+    top: -4px;
+}
+
+@keyframes blink {
+    0% {
+        top: 50px;
+        height: 30px;
+    }
+    2% {
+        top: 60px;
+        height: 10px;
+    }
+    4% {
+        top: 50px;
+        height: 30px;
+    }
+    6% {
+        top: 60px;
+        height: 10px;
+    }
+    8% {
+        top: 50px;
+        height: 30px;
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    body {
+        position: relative;
+        padding-bottom: 200px;
+    }
+    .pumpkin-wrapper {
+        position: absolute;
+        bottom: 30px;
+        width: 140px;
+    }
+}
+
+</style>
+
+<div class="pumpkin-wrapper">
+<div class="pumpkin">
+	<div class="leaf">
+		<div class="bg"></div>
+		<div class="p1"></div>
+		<div class="p2"></div>
+		<div class="p3"></div>
+		<div class="p4"></div>
+		<div class="p5"></div>
+		<div class="dots"></div>
+		<div class="inside"></div>
+	</div>
+	<div class="leaf right">
+		<div class="bg"></div>
+		<div class="p1"></div>
+		<div class="p2"></div>
+		<div class="p3"></div>
+		<div class="p4"></div>
+		<div class="p5"></div>
+		<div class="dots"></div>
+		<div class="inside"></div>
+	</div>
+	<div class="part-1"></div>
+	<div class="part-4"></div>
+	<div class="part-3"></div>
+	<div class="part-2"></div>
+	<div class="mouth-shadow"></div>
+	<div class="mouth"></div>
+	<div class="teeth"></div>
+	<div class="eye"><div class="border"></div></div>
+	<div class="eye left"><div class="border"></div></div>
+	<div class="eye nose"><div class="border"></div></div>
+	<div class="cat">
+		<div class="head">
+			<div class="cat-eye"></div>
+			<div class="cat-mouth"></div>
+		</div>
+		<div class="ear"><div class="border"></div></div>
+		<div class="ear right"><div class="border"></div></div>
+		<div class="neck"></div>
+		<div class="pattoune-top"></div>
+		<div class="pattoune-top right"></div>
+		<div class="pattoune"></div>
+		<div class="pattoune right"></div>
+		<div class="pattoune-bottom"></div>
+		<div class="pattoune-bottom-right"></div>
+		<div class="dots"></div>
+	</div>
+</div>
+</div>
