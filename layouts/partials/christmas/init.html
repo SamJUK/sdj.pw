@@ -1,0 +1,29 @@
+<style>
+    :root:root {
+        --christmas-red: #F5624D;
+        --christmas-green: #34A65F;
+        --pink: var(--christmas-green);
+    }
+
+    a:hover,
+    #menu li a,
+    .post-entry:hover h2
+    {
+        --pink: var(--christmas-green);
+    }
+
+    a:nth-child(even):hover,
+    #menu li:nth-child(even) a,
+    .post-entry:nth-child(odd):hover h2
+    {
+        --pink: var(--christmas-red);
+    }
+
+</style>
+
+{{- partial "christmas/credits.html" . -}}
+{{- partial "christmas/lights.html" . -}}
+<!-- {{- partial "christmas/tree.html" . -}} -->
+{{- partial "christmas/snow.html" . -}}
+{{- partial "christmas/snowman.html" . -}}
+{{- partial "christmas/candycane.html" . -}}

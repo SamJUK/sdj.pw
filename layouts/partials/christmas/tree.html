@@ -1,0 +1,206 @@
+<style>
+
+.tree-wrapper {
+    width: 100vw;
+    left: 50vw;
+    transform: translateX(-50%);
+    bottom: -220px;
+    position: fixed;
+    max-width: calc((var(--main-width) + var(--gap)* 2) + 860px);
+    z-index: -1;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.xmas-tree {
+	width: 500px;
+	height: 590px;
+	position: relative;
+	z-index: -2;
+    transform: scale(.5);
+}
+
+.star {
+	position: absolute;
+	left: 50%;
+	top: 16%;
+	margin-left: -20px;
+	font-size: 40px;
+	z-index: 3;
+	animation: spin 2s infinite linear forwards;
+}
+
+.star::before {
+    content: '';
+    width: 40px;
+    height: 40px;
+    display: block;
+    background-image: url('data:image/svg+xml,<svg height="800px" width="800px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 47.94 47.94" xml:space="preserve"><path style="fill:rgb(255, 252, 0);" d="M26.285,2.486l5.407,10.956c0.376,0.762,1.103,1.29,1.944,1.412l12.091,1.757c2.118,0.308,2.963,2.91,1.431,4.403l-8.749,8.528c-0.608,0.593-0.886,1.448-0.742,2.285l2.065,12.042c0.362,2.109-1.852,3.717-3.746,2.722l-10.814-5.685c-0.752-0.395-1.651-0.395-2.403,0l-10.814,5.685c-1.894,0.996-4.108-0.613-3.746-2.722l2.065-12.042c0.144-0.837-0.134-1.692-0.742-2.285l-8.749-8.528c-1.532-1.494-0.687-4.096,1.431-4.403l12.091-1.757c0.841-0.122,1.568-0.65,1.944-1.412l5.407-10.956C22.602,0.567,25.338,0.567,26.285,2.486z"/></svg>');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.star::after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    display: block;
+    position: absolute;
+    left: 11px;
+    top: 11px;
+    box-shadow: 0 0 32px 6px rgb(255, 252, 0.7);
+    border-radius: 50%;
+}
+
+@keyframes spin {
+	to {
+		transform: rotate(1turn);
+	}
+}
+
+.t1 {
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	margin-left: -100px;
+	border-right: 100px solid transparent;
+	border-left: 100px solid transparent;
+	border-bottom: 100px solid #2bd937;
+	border-bottom-left-radius: 50%;
+	border-bottom-right-radius: 50%;
+	z-index: 2;
+}
+
+.t2 {
+	position: absolute;
+	top: 27%;
+	left: 50%;
+	margin-left: -125px;
+	border-right: 125px solid transparent;
+	border-left: 125px solid transparent;
+	border-bottom: 125px solid #26bd30;
+	border-bottom-left-radius: 50%;
+	border-bottom-right-radius: 50%;
+	z-index: 1;
+}
+
+.t3 {
+	top: 34%;
+	left: 50%;
+	margin-left: -150px;
+	position: absolute;
+	border-right: 150px solid transparent;
+	border-left: 150px solid transparent;
+	border-bottom: 150px solid #1f9927;
+	border-bottom-left-radius: 50%;
+	border-bottom-right-radius: 50%;
+}
+
+.t1::before,
+.t1::after,
+.t2::before,
+.t2::after,
+.t3::before,
+.t3::after {
+	position: absolute;
+	content: "";
+	width: 10px;
+	height: 20px;
+	border-radius: 50%;
+	background: #d6d400;
+	z-index: 3;
+	animation: blink 1.5s infinite;
+}
+
+.t2::before {
+	animation-delay: 0.5s;
+}
+
+.t2::after {
+	animation-delay: 0.5s;
+}
+
+.t3::before {
+	animation-delay: 1s;
+}
+
+.t3::after {
+	animation-delay: 1s;
+}
+
+@keyframes blink {
+	30% {
+		background: rgb(255, 252, 0);
+		box-shadow: 0 0 20px 10px rgba(255, 252, 0, 0.35);
+	}
+	60% {
+		background: #d6d400;
+		box-shadow: 0 0 0px 0px rgba(255, 252, 0, 0.35);
+	}
+}
+
+.t1::before {
+	top: 77px;
+	left: -82px;
+}
+
+.t1::after {
+	top: 77px;
+	right: -82px;
+}
+
+.t2::before {
+	top: 98px;
+	left: -103px;
+}
+
+.t2::after {
+	top: 98px;
+	right: -103px;
+}
+
+.t3::before {
+	top: 118px;
+	left: -122px;
+}
+
+.t3::after {
+	top: 118px;
+	right: -122px;
+}
+
+.stem {
+	position: absolute;
+	top: 53%;
+	left: 50%;
+	margin-left: -20px;
+	width: 40px;
+	height: 100px;
+	z-index: -1;
+	background: #694215;
+}
+
+.snow-ground {
+	position: absolute;
+	width: 120px;
+	height: 30px;
+	background: whitesmoke;
+	top: 67%;
+	left: 50%;
+	margin-left: -60px;
+	z-index: -5;
+	border-radius: 50%;
+}
+
+</style>
+<div class="tree-wrapper">
+    <div class="xmas-tree">
+        <div class="star"><i class="fas fa-star"></i></div>
+        <div class="t1"></div>
+        <div class="t2"></div>
+        <div class="t3"></div>
+        <div class="stem"></div>
+        <div class="snow-ground"></div>
+    </div>
+</div>

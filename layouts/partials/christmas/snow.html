@@ -1,0 +1,51 @@
+<div class="snow-globe"></div>
+<style>
+    .main {
+        background: color-mix(in srgb, var(--theme) 90%, transparent);
+    }
+
+    .snow-globe {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: -2;
+        opacity: .2;
+    }
+.snow {
+	position: absolute;
+	top: -10px;
+	
+	background: rgb(231, 231, 231);
+	border-radius: 50%;
+	animation: fall linear;
+}
+
+@keyframes fall {
+	to {
+		transform: translateY(105vh);
+	}
+}
+</style>
+<script>
+    const snowGlobe = document.querySelector('.snow-globe');
+    document.body.appendChild(snowGlobe);
+
+    setInterval(makeSnow, 40);
+    function makeSnow() {
+        const snow = document.createElement("div");
+        const size = Math.random() * 4.5 + 3.5;
+        snow.className = "snow";
+        snow.style.width = size + "px";
+        snow.style.height = size + "px";
+        snow.style.left = Math.random() * window.innerWidth + "px";
+        snow.style.opacity = size / 8;
+        if (size < 7) {
+            snow.style.zIndex = -5;
+        }
+        snow.style.animationDuration = Math.random() * 3 + 2 + "s";
+        snowGlobe.appendChild(snow);
+        setTimeout(() => snow.remove(), 5000);
+    }
+</script>

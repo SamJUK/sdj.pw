@@ -3,4 +3,6 @@
 
 {{ if or (eq (string now.Month) "October") (and (eq (string now.Month) "November") (lt now.Day 2)) }}
     {{- partial "halloween/init.html" . -}}
+{{ else if eq (string now.Month) "December" }}
+    {{- partial "christmas/init.html" . -}}
 {{ end }}
