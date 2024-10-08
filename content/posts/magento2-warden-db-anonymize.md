@@ -10,8 +10,8 @@ You might find yourself needing to anonymize a database in Warden to either pass
 
 First lets download the resources we need, we will store them in the dev folder as we can exclude this in our deployment pipelines.
 ```bash
-wget https://github.com/Smile-SA/gdpr-dump/releases/latest/download/gdpr-dump.phar -o dev/gdpr-dump
-wget https://raw.githubusercontent.com/Smile-SA/gdpr-dump/main/app/config/example.yaml -o dev/gdpr-dump.yaml
+wget https://github.com/Smile-SA/gdpr-dump/releases/latest/download/gdpr-dump.phar -O dev/gdpr-dump
+wget https://raw.githubusercontent.com/Smile-SA/gdpr-dump/main/app/config/example.yaml -O dev/gdpr-dump.yaml
 chmod +x dev/gdpr-dump
 ```
 
