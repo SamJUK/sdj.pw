@@ -1,0 +1,14 @@
+{
+  "name": "sdj.pw",
+  "version": "1.0.0",
+  "description": "- Personal Technical Blog that covers any/all topics ranging from DevOps to Magento to Software Engineering.  - Deployed at [https://www.sdj.pw](https://www.sdj.pw/?utm_source=github&utm_medium=repository&utm_campaign=sdj_pw) - Built on top of [Hugo](https://gohugo.io/)",
+  "main": "scream.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.48.0",
+    "@types/node": "^22.7.5"
+  }
+}
