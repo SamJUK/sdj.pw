@@ -1,7 +1,7 @@
 ---
 title: "Is 100% uptime a bad goal?"
 description: "Should you aim for 100% uptime across your servers? Or instead target fluid infrastructure where short lived nodes can spawn and die as required?"
-date: 2024-10-14T06:00:00+00:00
+date: 2024-10-21T06:00:00+00:00
 tags: ["ramblings", "sysops", "security"]
 author: "Me"
 draft: false
