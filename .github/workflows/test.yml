@@ -1,0 +1,67 @@
+name: Tests
+
+on:
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  e2e:
+    name: End 2 End Tests
+    timeout-minutes: 60
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    env:
+      HUGO_VERSION: 0.124.0
+      DEBUG: pw:webserver
+    
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      with:
+        submodules: recursive
+        fetch-depth: 0
+
+    - uses: actions/setup-node@v4
+      with:
+        node-version: lts/*
+
+    - name: Cache Node Modules
+      id: cache-node-modules
+      uses: actions/cache@v4
+      with:
+        path: node_modules
+        key: modules-${{ hashFiles('package-lock.json') }}
+    
+    # - name: Cache Playwright Binaries
+    #   id: cache-playwright
+    #   uses: actions/cache@v4
+    #   with:
+    #     path: ~/.cache/ms-playwright
+    #     key: playwright-${{ hashFiles('package-lock.json') }}
+
+    - name: Install Hugo CLI
+      run: |
+        wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.deb \
+        && sudo dpkg -i ${{ runner.temp }}/hugo.deb
+
+    - name: Install dependencies
+      id: install-dependencies
+      if: steps.cache-node-modules.outputs.cache-hit != 'true'
+      run: npm ci
+
+    - name: Install Playwright Browsers
+      id: install-playwright-browsers
+      # if: steps.cache-playwright.outputs.cache-hit != 'true'
+      run: npx playwright install --with-deps
+
+    - name: Run Playwright tests
+      run: npx playwright test
+
+    - uses: daun/playwright-report-summary@v3
+      if: always()
+      with:
+        report-file: ./playwright-report/test-results.txt
+        job-summary: true
