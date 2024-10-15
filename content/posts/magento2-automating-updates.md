@@ -9,7 +9,7 @@ draft: false
 
 > 🔥 Hot Take: Stop offloading poor engineering practises onto clients.
 
-There is no wonder merchants are apprehensive about using Magento 2, when we are quoting them excessive amounts to even keep their store up to date and secure. In some recent research, I've seen estimates in excess of 100 hours for an update. That seems wild to me! 
+There is no wonder merchants are apprehensive about using Magento 2, when we are quoting them excessive amounts to even keep their store up to date and secure. In some recent research, I've seen estimates in excess of 100 hours for an update. That seems wild to me!
 
 I've found Magento releases have been getting a lot more stable & bug free in recent years, especially since Adobes acquisition. At least in comparison with the early Magento 2 / Magento 1 days. We used to have "SUPEE-xxx potential issues?" threads popping up on stack exchange before the updates even dropped.
 
@@ -18,7 +18,7 @@ Before we get started, this is not a walkthrough/tutorial, instead just some ide
 
 ## Common Arguments
 
-Just to touch base over a few common arguments against automated updates I hear. 
+Just to touch base over a few common arguments against automated updates I hear.
 
 ### Software Requirement Changes (PHP,Elasticsearch,MySQL versions)
 
@@ -26,15 +26,15 @@ Have a look into infrastructure as code (IaC) and containerised environments. Wh
 
 ### Updates keeps breaking our customisations
 
-Sure, this one has a bit more merit. Although a lot changes I see break during updates have not been implemented correctly. Things such as using preferences, using plugins on API classes, deprecated methods etc. 
+Sure, this one has a bit more merit. Although a lot changes I see break during updates have not been implemented correctly. Things such as using preferences, using plugins on non API classes, deprecated methods etc.
 
-And when issues due occur, you should have Unit test coverage for any customisations done. If your running Unit tests on the automatically opened PR... Then you got a task list already curated for you!
+And when issues do occur, you should have Unit test coverage for any customisations done. And if your running Unit tests on the automatically opened PR... Then you got a task list already curated for you!
 
 ### Third Party Module Lack Support for the Release
 
-Most vendors get the updates the same time as us, so it can take a little while for modules to reach compatibility. Although your Unit / E2E tests should be failing, highlighting the faults in the update PR. And your PR should be updating each time a vendor releases an update, until eventually your tests pass and you can merge. Entirely hands free!
+Most vendors get the updates the same time as us, so it can take a little while for modules to reach compatibility. Although your Unit / E2E tests should fail, highlighting the compatability issues with the update. If you have your version constraints correct, as vendors release new updates. Your PR should eventually reach a point where tests pass and you can merge. Entirely hands free!
 
-And if your modules take ages to each compatibility / never do... Then pick better vendors.
+And if your modules take ages to reach compatibility or they never do... Then pick better vendors.
 
 ## Testing
 If we look at the time associated with applying Magento updates, the vast majority is testing the stores to make sure it all works as intended.
