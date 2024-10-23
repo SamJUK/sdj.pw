@@ -6,3 +6,15 @@
 {{ else if eq (string now.Month) "December" }}
     {{- partial "christmas/init.html" . -}}
 {{ end }}
+
+
+<script defer>
+const searchInput = document.querySelector('#searchInput');
+searchInput.value = (new URL(window.location.href)).searchParams.get('q');
+const initSearchFromQuery = setInterval(function() {
+    if (document.querySelector('.post-entry') !== null) {
+        return clearInterval(initSearchFromQuery);
+    }
+    searchInput.dispatchEvent(new Event('keyup'));
+}, 100);
+</script>
