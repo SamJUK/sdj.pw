@@ -1,18 +1,12 @@
-name: Deploy Hugo site to Pages
+name: Deployment
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - master
-  workflow_dispatch:
   schedule: ## Release schedule
     - cron: '45 6 * * 1,4'
-
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
-permissions:
-  contents: read
-  pages: write
-  id-token: write
 
 concurrency:
   group: "deploy"
