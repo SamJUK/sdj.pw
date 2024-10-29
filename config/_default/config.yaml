@@ -101,10 +101,10 @@ menu:
       name: Search
       url: /search/
       weight: 30
-    - identifier: example
-      name: Main Site
-      url: https://samdjames.uk
-      weight: 40
+    - identifier: docs
+      name: Docs
+      url: https://docs.sdj.pw
+      weight: 35
 
 outputs:
   home:
