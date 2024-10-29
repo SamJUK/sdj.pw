@@ -84,6 +84,15 @@ html:has(.dark .about-wrapper) {
     transition: 0.1s ease;
 }
 
+.about-wrapper .action-set .icon.website svg {
+    transform: scale(1.3);
+}
+
+.about-wrapper .action-set .icon.website:hover svg,
+.about-wrapper .action-set .icon.website:focus-within svg {
+    transform: scale(1.6);
+}
+
 .dark .about-wrapper .action-set .icon svg {
     fill: var(--about-txt-clr);
 }
