@@ -11,3 +11,7 @@ article.post-entry:hover {
 article.post-entry:hover h2 {
     color: var(--pink);
 }
+
+.first-entry.home-info {
+  min-height: 180px;
+}

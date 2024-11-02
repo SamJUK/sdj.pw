@@ -8,6 +8,7 @@ html:has(.dark .about-wrapper) {
 }
 
 .about-wrapper {
+    padding-top: 32px;
     font-size: 18px;
     display: flex;
     gap: 2em;
