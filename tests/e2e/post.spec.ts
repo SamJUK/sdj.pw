@@ -6,7 +6,7 @@ test.describe('post', () => {
         await page.getByLabel('post link to').first().click()
         await page.waitForURL('**/posts/**');
     })
-    
+
     test('has share buttons', async ({ page }) => {
         await expect(page.locator('[href*="reddit.com/submit"]')).toBeVisible();
         await expect(page.locator('[href*="linkedin.com/shareArticle"]')).toBeVisible();
@@ -23,7 +23,7 @@ test.describe('post', () => {
     })
 
     test('has edit cta block', async ({ page }) => {
-        await expect(page.getByText('open an issue on the Github Repo')).toBeVisible();
+        await expect(page.getByText('open an issue / PR on the Github Repo')).toBeVisible();
     })
 
     test('has suggest changes link', async ({ page }) => {
