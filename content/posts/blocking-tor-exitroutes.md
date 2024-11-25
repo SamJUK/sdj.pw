@@ -5,6 +5,7 @@ date: 2024-07-22T06:00:00+00:00
 tags: ["security", "sysops"]
 author: "Me"
 draft: false
+documentation: https://docs.sdj.pw/general/tor-block-exit-routes.html
 ---
 One of my clients have recently seen a surge in TOR traffic with zero conversion from them. And has requested for them to be blocked, since its no point in autoscaling the infrastructure, leading to increased cost, for non converting anonymous traffic.
 

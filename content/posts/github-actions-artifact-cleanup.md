@@ -3,6 +3,7 @@ title: "Cleaning Up Github Actions Artifacts via cli"
 description: "How to clean-up Github action artifacts via the github cli, helping reduce github storage usage and billing."
 date: 2024-08-05T05:00:00+00:00
 tags: ["github", "devops"]
+documentation: https://docs.sdj.pw/general/github/cleanup-artifacts.html
 ---
 There are a handful of guides on how to clean-up old Github Action Artifacts. The issue I have with the ones I've seen, is they are really convoluted solutions for such a simple task.
 

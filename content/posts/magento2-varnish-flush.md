@@ -5,6 +5,7 @@ date: 2024-06-04T19:00:00+00:00
 tags: ["magento2", "devops"]
 author: "Me"
 draft: false
+documentation: https://docs.sdj.pw/software/varnish/flush.html
 ---
 
 Flushing Magento 2 cache is simple right? Just click the Orange "Cache Clear" button in the Admin, or run `php bin/magento cache:clean` from the command line. 

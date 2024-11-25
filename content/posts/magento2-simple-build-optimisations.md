@@ -5,6 +5,7 @@ date: 2024-08-12T05:00:00+00:00
 tags: ["magento2", "devops"]
 author: "Me"
 draft: false
+documentation: https://docs.sdj.pw/magento/optimise-scd-build-process.html
 ---
 Typically a lot of Magento 2 stores are slow to build, some taking up to and over an hour. This becomes a bigger pain point as stores grow and more themes & locales are added. Often optimising build time is often towards the bottom of the priority list. The [Magento Static Content Deploy Docs](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/static-view/static-view-file-deployment) provides a good amount of detail on this subject, and is a good read.
 

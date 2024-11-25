@@ -5,6 +5,7 @@ date: 2023-11-12T11:30:00+00:00
 tags: ["magento2", "debugging"]
 author: "Me"
 draft: false
+documentation: "https://docs.sdj.pw/magento/identify-db-schema-changes.html"
 ---
 Recently I came across an issue on a site where the `setup:db:status` would constantly report `Declarative Schema is not up to date` even after consecutive runs. This was breaking the zero downtime deployment configuration for the store, as the CD process always saw DB updates to process.
 

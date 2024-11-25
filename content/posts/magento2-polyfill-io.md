@@ -7,6 +7,7 @@ author: "Me"
 draft: false
 showToc: true
 TocOpen: true
+documentation: https://docs.sdj.pw/software/nginx/replace-polyfill-io.html
 ---
 A simple two line Nginx config update can remove any reference of the polyfill Malware from coming out of your store.
 

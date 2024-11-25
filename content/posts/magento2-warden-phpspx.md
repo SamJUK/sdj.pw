@@ -5,6 +5,7 @@ date: 2024-05-23T18:00:00+00:00
 tags: ["magento2", "devops", "performance", "warden", "docker", "debugging"]
 author: "Me"
 draft: false
+documentation: https://docs.sdj.pw/warden/php-spx.html
 ---
 
 PHP-SPX is an free and open source profiling alternative to Blackfire/Tideways etc. The main benefits imo are, its free to use and how simple it is to setup < 60s

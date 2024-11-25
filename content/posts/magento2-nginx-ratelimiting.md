@@ -5,6 +5,7 @@ date: 2024-04-03T18:30:00+00:00
 tags: ["magento2", "nginx", "devops"]
 author: "Me"
 draft: false
+documentation: https://docs.sdj.pw/software/nginx/rate-limiting.html
 ---
 Configuring Nginx rate limiting for Magento is both simple to get started, but complex to find the right balance. It is a great way to combat malicious traffic from web scrapers/crawlers, and less respectful 3rd party integrations. 
 
