@@ -5,6 +5,7 @@ date: 2024-07-07T11:30:00+00:00
 tags: ["magento2", "security", "devsecops", "magento-cloud", "adobe-commerce"]
 author: "Me"
 draft: false
+documentation: https://docs.sdj.pw/magento/cosmicsting.html
 ---
 I've been sat on this post and POC for CosmicSting (CVE-2024-34102) for a little while, giving time for stores to patch the vulnerability. Chances are, if you still have not applied the patch your store will have been probed and compromised by now since there are a handful of POCs out in the wild.
 

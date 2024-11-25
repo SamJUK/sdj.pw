@@ -5,6 +5,7 @@ date: 2023-02-17T11:30:00+00:00
 tags: ["magento2", "debugging"]
 author: "Me"
 draft: false
+documentation: https://docs.sdj.pw/magento/non-cacheable-blocks.html
 ---
 A handful of times I have came across pages where full page caching is broken. Instead of diving through and grepping various XML files to identify what module is breaking the cache. I have wrote a section of code, that will identify any uncacheable blocks on the current page and display them in the bottom left of the page.
 

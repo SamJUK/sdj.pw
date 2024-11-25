@@ -5,6 +5,7 @@ date: 2024-08-27T05:00:00+00:00
 tags: []
 author: "Me"
 draft: false
+documentation: https://docs.sdj.pw/general/newrelic.html
 ---
 
 I was doing some health checks on some new brownfield projects we've taken on recently, ahead of migrating them to our own infrastructure. And I noticed that their NewRelic invoices seemed abnormally high for the amount of traffic the stores received. I was expecting most of the stores to still be in the free tier, or at least under 200/300GB total ingest.

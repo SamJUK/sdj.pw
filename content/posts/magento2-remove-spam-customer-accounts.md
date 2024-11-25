@@ -7,6 +7,7 @@ author: "Me"
 draft: false
 showToc: true
 TocOpen: true
+documentation: https://docs.sdj.pw/magento/spam-account-cleanup.html
 ---
 
 ## Summary

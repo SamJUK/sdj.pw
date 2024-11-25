@@ -4,6 +4,7 @@ date: 2020-11-13T11:30:00+00:00
 tags: ["openvpn", "devops"]
 author: "Me"
 draft: false
+documentation: https://docs.sdj.pw/software/openvpn/installation.html
 ---
 You can simplify OpenVPN installation by using the OpenVPN installation script by NYR https://github.com/Nyr/openvpn-install
 

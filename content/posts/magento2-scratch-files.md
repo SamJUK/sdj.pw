@@ -5,6 +5,7 @@ date: 2023-02-17T11:30:00+00:00
 tags: ["magento2"]
 author: "Me"
 draft: false
+documentation: https://docs.sdj.pw/magento/scratch-file.html
 ---
 I often find the need to test components / functionality independently of the system or execute single time use scripts. Which i find developing and deploying a whole module is a waste of time and resources.
 

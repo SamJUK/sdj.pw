@@ -5,6 +5,7 @@ date: 2024-09-20T06:00:00+00:00
 tags: ["magento2", "varnish", "debugging", "performance"]
 author: "Me"
 draft: false
+documentation: https://docs.sdj.pw/software/varnish/debug-cache-performance.html
 ---
 I do a fair bit of performance oriented consulting/contracting work with Magento Agencies / Developers. A common theme seems to be difficulty monitoring/debugging Varnish.
 

@@ -5,6 +5,7 @@ date: 2024-05-21T19:00:00+00:00
 tags: ["magento2", "warden", "devops", "devsecops", "docker"]
 author: "Me"
 draft: false
+documentation: https://docs.sdj.pw/warden/anonymise-db.html
 ---
 You might find yourself needing to anonymize a database in Warden to either pass off to another developer, or move it forward into ephemeral / staging environments. This is fairly easy to achieve with [Smile-SA GDPR Dump](https://github.com/Smile-SA/gdpr-dump).
 
