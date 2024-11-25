@@ -1,0 +1,37 @@
+.cta-block {
+    --bg: #f6f6f6;
+    --title: unset;
+
+    border-radius: var(--radius);
+    background: var(--bg);
+    border: 1px solid var(--border);
+    padding: 1em;
+    margin: 1em 0;
+}
+ 
+[class*="cta-block--"]::before {
+    content: var(--title);
+    font-weight: 600;
+    color: var(--primary);
+    font-size: .75em;
+    word-spacing: .25em;
+}
+
+
+.dark .cta-block:not([class*="cta-block--"]) {
+    --bg: rgb(36 37 40);
+}
+
+.cta-block--warning {
+    --bg: rgba(324, 179, -102, .25);
+    --title: '🚧 WARNING';
+}
+
+.cta-block--danger {
+    --bg: rgba(244, 63, 94, .25);
+    --title: '🚨 DANGER';
+}
+
+.cta-block a.pink {
+    font-weight: 500;
+}

@@ -1,7 +1,7 @@
 {{- if and (or .Params.editPost.URL site.Params.editPost.URL) (not (.Param "editPost.disabled")) -}}
 {{- $fileUrlPath := path.Join .File.Path }}
 
-<div class="edit-cta-block">
+<div class="cta-block edit-cta-block">
     <p>Would you like to suggest changes? Maybe an Improvement / Correction for the content?</p>
     <p>Or maybe you got some opinions and thoughts about what you just read.</p>
     <p>Feel free to <a class="pink" href="{{ .Params.editPost.URL | default site.Params.editPost.URL }}{{ if .Params.editPost.appendFilePath | default ( site.Params.editPost.appendFilePath | default false ) }}/{{ $fileUrlPath }}{{ end }}" rel="noopener noreferrer" target="_BLANK">open an issue / PR on the Github Repo</a>, and lets chat!</p>

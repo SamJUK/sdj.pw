@@ -1,0 +1,7 @@
+{{- if .Param "outdated" -}}
+
+<div class="cta-block cta-block--warning">
+    <p>A new post "{{ .Param "outdated.title" }}" has been published that is related to this one, the content within this post now may be out of date. <a href="{{ .Param "outdated.link" }}"><u>Click here to view the new post.</u></a></p>
+</div>
+
+{{- end }}
