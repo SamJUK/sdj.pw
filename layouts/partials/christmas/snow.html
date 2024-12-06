@@ -1,5 +1,13 @@
 <div class="snow-globe"></div>
 <style>
+    :root {
+      --snow-color: #747474;
+    }
+
+    .dark {
+      --snow-color: #E7E7E7;
+    }
+
     .main {
         background: color-mix(in srgb, var(--theme) 90%, transparent);
     }
@@ -13,20 +21,21 @@
         z-index: -2;
         opacity: .2;
     }
-.snow {
-	position: absolute;
-	top: -10px;
-	
-	background: rgb(231, 231, 231);
-	border-radius: 50%;
-	animation: fall linear;
-}
 
-@keyframes fall {
-	to {
-		transform: translateY(105vh);
-	}
-}
+    .snow {
+        position: absolute;
+        top: -10px;
+
+        background: var(--snow-color);
+        border-radius: 50%;
+        animation: fall linear;
+    }
+
+    @keyframes fall {
+        to {
+            transform: translateY(105vh);
+        }
+    }
 </style>
 <script>
     const snowGlobe = document.querySelector('.snow-globe');
