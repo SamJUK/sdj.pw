@@ -23,6 +23,8 @@ The idea behind the module form factor, is mostly around use in a CI pipeline. Y
 
 The source code can be found on my Github over at [SamJUK/m2-module-verbose-db-status](https://github.com/SamJUK/m2-module-verbose-db-status/).
 
+[![Magento 2 Verbose DB Status Module](/images/m2-module-db-status.png)](https://github.com/SamJUK/m2-module-verbose-db-status/)
+
 ## Scratch File
 
 The quick and dirty solution, write a PHP file to the root of your installation, run it with the PHP CLI and your done.  The maintained version of the script can be found over on my [documentation site](https://docs.sdj.pw/magento/identify-db-schema-changes.html#script)
