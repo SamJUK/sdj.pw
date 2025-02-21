@@ -27,8 +27,8 @@ These are just standard System Configuration options, so you can change these in
 ```sh
 php bin/magento config:set catalog/search/engine elasticsearch8
 php bin/magento config:set catalog/search/elasticsearch8_server_hostname localhost
-php bin/magento config:set catalog/search/elasticsearch8_server_hostname 9200
-php bin/magento config:set catalog/search/elasticsearch8_server_hostname 15
+php bin/magento config:set catalog/search/elasticsearch8_server_port 9200
+php bin/magento config:set catalog/search/elasticsearch8_server_timeout 15
 ```
 
 ### Missing Elasticsearch8 Package
