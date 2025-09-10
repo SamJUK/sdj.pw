@@ -1,8 +1,8 @@
 ---
 title: "How to efficiently patch Magento 2 deployments at scale"
-description: "Approaches to simply deploying urgent patches across a large inventory of Magento 2 deployments"
-date: 2025-05-18T19:00:00+00:00
-tags: []
+description: "Approaches to simply deploying patches across a large inventory of Magento 2 deployments"
+date: 2025-09-11T06:00:00+00:00
+tags: ["magento2", "security", "devops", "deployment"]
 author: "Me"
 draft: false
 ---
@@ -24,7 +24,7 @@ ansible-playbook -i inventories/acme_agency.yaml playbooks/patch.yaml -e patch_f
 
 > ℹ **Bonus Tip:** You can start with targeting a single/smaller selection of hosts with the `--limit` flag. Then once confident push across the whole inventory.
 
-Example: https://www.github.com/SamJUK/magento2-patching-examples/live-patching/README.md
+Example: https://github.com/SamJUK/magento2-patching-examples/blob/master/live-patching
 
 ## Maintenance Patching
 
@@ -55,4 +55,16 @@ The big benefit to this approach, is we can declare the new patch in a single pl
 
 Now we (should) have the patch ready to be merged, after a quick check of the changelog and test results.
 
-Example: https://www.github.com/SamJUK/magento2-patching-examples/maintenance-patching/README.md
+Example: https://github.com/SamJUK/magento2-patching-examples/blob/master/maintenance-patching
+
+## Package Updates
+
+Package updates are where Adobe performs a full security release, creating a new `-p` composer package. Thanks to tools like Dependabot & Renovate this is an already solved problem for most.
+
+Provided you have a sensible config and properly manage composer constraints, once the new release is published your projects should start to create automatic pull requests to update to the new patch version.
+
+Once your test suite passes, it should be as simple as, a quick changelog review and triggering the merge.
+
+> ℹ **Tip:** Make use of dependency groups to run core updates on a more aggressive schedule and isolate them from regular Module updates.
+
+> ℹ **Bonus Tip:** If using the central patch approach, run these in their own group as well. Preventing patches being blocked by other updates.
