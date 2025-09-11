@@ -25,3 +25,7 @@ html:has(.layout--extrawide) {
 main:has(.layout--extrawide) {
     max-width: calc(var(--nav-width) + var(--gap) * 2);
 }
+
+.post-content h2 {
+    margin-top: 62px;
+}
