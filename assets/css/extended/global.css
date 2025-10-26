@@ -29,3 +29,7 @@ main:has(.layout--extrawide) {
 .post-content h2 {
     margin-top: 62px;
 }
+
+.post-content p:has(+ ul) {
+    margin-bottom: 0;
+}
