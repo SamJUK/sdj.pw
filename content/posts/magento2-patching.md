@@ -5,6 +5,7 @@ date: 2025-09-11T06:00:00+00:00
 tags: ["magento2", "security", "devops", "deployment"]
 author: "Me"
 draft: false
+documentation: https://docs.sdj.pw/operations/ansible/patching.html
 ---
 
 Deploying patches is simple for in-house development teams or smaller Agencies maintaining only a few stores. Manually applying patches per project is simple, but doesn't scale well. Both from time cost and security exposure perspectives. 
