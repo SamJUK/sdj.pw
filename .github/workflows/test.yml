@@ -60,7 +60,7 @@ jobs:
     - name: Run Playwright tests
       run: npx playwright test
 
-    - uses: daun/playwright-report-summary@v3
+    - uses: daun/playwright-report-summary@be9e270edd5ad86038604d3caa84a819a6ff6fed # v3
       if: always()
       with:
         report-file: ./playwright-report/test-results.txt
