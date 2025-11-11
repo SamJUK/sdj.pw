@@ -6,10 +6,10 @@ test.describe('homepage', () => {
     })
 
     test('has social links', async ({ page }) => {
-        await expect(page.getByTitle('Stackoverflow')).toBeVisible()
-        await expect(page.getByTitle('Github')).toBeVisible()
-        await expect(page.getByTitle('Linkedin')).toBeVisible()
-        await expect(page.getByTitle('RSS')).toBeVisible()
+        await expect(page.getByRole('link', { name: 'Stackoverflow' })).toBeVisible()
+        await expect(page.getByRole('link', { name: 'Github' })).toBeVisible()
+        await expect(page.getByRole('link', { name: 'Linkedin' })).toBeVisible()
+        await expect(page.getByRole('link', { name: 'RSS' })).toBeVisible()
     })
 
     test('has full post list', async ({ page }) => {
