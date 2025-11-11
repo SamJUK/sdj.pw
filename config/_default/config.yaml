@@ -48,6 +48,8 @@ params:
     icon: /assets/apple-touch-icon.png
     iconHeight: 35
 
+  description: "Magento Blog - SDJ.PW "
+
   profileMode:
     enabled: false
 
