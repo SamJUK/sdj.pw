@@ -1,3 +1,3 @@
 {{- if .Param "documentation" -}}
-&nbsp;|&nbsp; <a rel="noopener" target="_blank" href="{{ .Param "documentation" }}">View Documentation</a>
+&nbsp;|&nbsp; <a rel="noopener" target="_blank" href="{{ .Param "documentation" }}?utm_source=sdj.pw&utm_medium=doc-link&utm_campaign={{ path.BaseName .RelPermalink | urlquery }}">View Documentation</a>
 {{- end }}
