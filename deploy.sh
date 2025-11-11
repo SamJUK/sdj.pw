@@ -1,11 +1,14 @@
 #!/usr/bin/env sh
 
-[ -f .env ] && source .env
-[ -z "$REMOTE_PORT" ] && REMOTE_PORT="22"
+[[ -f .env ]] && source .env
+[[ -z "$REMOTE_PORT" ]] && REMOTE_PORT="22"
 REMOTE="$REMOTE_HOST:$REMOTE_PATH"
 PROJECT="SDJ.PW"
 
 deployment_alert() {
+    local title="$1"
+    local color="$2"
+
     curl --location "https://discord.com/api/webhooks/$DISCORD_WEBHOOK_ID/$DISCORD_WEBHOOK_TOKEN" \
 --header 'Accept: application/json' \
 --header 'Content-Type: application/json' \
@@ -17,8 +20,8 @@ deployment_alert() {
         \"icon_url\": \"https://avatars.githubusercontent.com/u/68156353?s=48&v=4\"
     },
     \"embeds\": [{
-      \"title\": \"$1\",
-      \"color\": $2,
+      \"title\": \"$title\",
+      \"color\": $color,
       \"fields\": [
         {
             \"name\": \"Hostname\",
@@ -46,6 +49,7 @@ deployment_alert() {
       ]
     }]
 }"
+return 0
 }
 
 trap "deployment_alert \"❌ [$PROJECT] Failed Deployment\" \"16711680\" && exit 255" ERR
@@ -56,9 +60,9 @@ deployment_alert "ℹ️ [$PROJECT] Starting Deployment" "43775"
 
 echo "[+] Checking connection to remote"
 SSH_OUTPUT=$(ssh -p$REMOTE_PORT $REMOTE_HOST "ls -la $REMOTE_PATH"  2>&1 >/dev/null)
-if [ "$?" != "0" ]; then
-    echo "[!] Connection error"
-    echo "[!]   $SSH_OUTPUT"
+if [[ "$?" != "0" ]]; then
+    echo "[!] Connection error" >&2
+    echo "[!]   $SSH_OUTPUT" >&2
     exit 1
 fi
 

@@ -28,5 +28,7 @@
     let elements = Array.from(document.querySelectorAll('pre, .edit-cta-block, .post-entry'));
     elements.sort(() => Math.random() - 0.5);
     const decoratedElements = elements.slice(0, randomRange(elements.length * .2, elements.length * .6))
-    decoratedElements.forEach(e => e.classList.add('cobweb'));
+    for (let element of decoratedElements) {
+        element.classList.add('cobweb');
+    }
 </script>
