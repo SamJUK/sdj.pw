@@ -2,7 +2,7 @@ html:has(.about-wrapper) {
     --about-txt-clr: #333333;
 }
 
-html:has(.dark .about-wrapper) {
+html[data-theme="dark"]:has(.about-wrapper) {
     --primary: #ffffff;
     --about-txt-clr: #cbcbcb;
 }
@@ -94,7 +94,7 @@ html:has(.dark .about-wrapper) {
     transform: scale(1.6);
 }
 
-.dark .about-wrapper .action-set .icon svg {
+[data-theme="dark"] .about-wrapper .action-set .icon svg {
     fill: var(--about-txt-clr);
 }
 

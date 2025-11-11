@@ -21,10 +21,10 @@
   text-decoration: underline;
 }
 
-.dark .four_oh_four h1 {
+[data-theme="dark"] .four_oh_four h1 {
   color: white;
 }
-.dark .four_oh_four .text > p {
+[data-theme="dark"] .text > p {
   opacity: .75;
 }
 

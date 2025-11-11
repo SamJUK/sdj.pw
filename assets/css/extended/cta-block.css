@@ -18,7 +18,7 @@
 }
 
 
-.dark .cta-block:not([class*="cta-block--"]) {
+[data-theme="dark"] .cta-block:not([class*="cta-block--"]) {
     --bg: rgb(36 37 40);
 }
 
