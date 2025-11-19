@@ -8,6 +8,8 @@ author: "Me"
 draft: false
 ---
 
+[![Cloudflare Outage November 2025](/images/cloudflare-outage-nov-25.png)](https://blog.cloudflare.com/18-november-2025-outage/)
+
 I've seen multiple takes on this, from people writing it off as an acceptable loss, to others shouting about how the outage did not affect them due to using alternative providers. 
 
 Both of these, are bad takes in my opinion, and we should always look internally for improvements that can be made.
