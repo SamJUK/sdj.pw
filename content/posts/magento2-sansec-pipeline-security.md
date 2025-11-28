@@ -1,7 +1,7 @@
 ---
 title: "Strengthening Magento 2 Security in CI/CD Pipelines with Sansec Ecomscan"
 description: "Learn how to integrate Sansec Ecomscan into Magento 2 CI/CD pipelines to detect malware, enforce security patches, and secure build artifacts. Step-by-step guides for GitHub Actions and Bitbucket Pipelines included."
-date: 2025-11-28T05:30:00+00:00
+date: 2025-12-01T05:30:00+00:00
 tags: [ "magento2", "security", "devsecops", "magento-cloud", "adobe-commerce" ]
 author: "Me"
 draft: false
