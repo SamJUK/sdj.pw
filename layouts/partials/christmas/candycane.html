@@ -29,7 +29,10 @@
         left: 0;
         z-index: 1;
     }
-    .dark .edit-cta-block::after {
-        background: rgb(36 37 40);
+    [data-theme="dark"] .edit-cta-block::after {
+        background: var(--theme);
+    }
+    [data-theme="dark"] .edit-cta-block::before {
+        opacity: .5;
     }
 </style>
