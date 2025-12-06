@@ -54,8 +54,8 @@ params:
     enabled: false
 
   homeInfoParams:
-    Title: "Hi there \U0001F44B"
-    Content: "Incoherent ramblings from a Principal Magento Engineer. Covering SRE / Devops / Platform Eng / Magento Dev"
+    Title: "Making Magento Do Things Adobe Never Intended"
+    Content: "DevOps/SRE/Platform Engineering with a side of questionable architectural decisions"
 
   socialIcons:
     - name: Stackoverflow
