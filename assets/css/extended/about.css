@@ -155,6 +155,21 @@ html[data-theme="dark"]:has(.about-wrapper) {
 }
 
 
+.about-wrapper .role .company {
+    white-space: nowrap;
+}
+.about-wrapper .role .company::before {
+    content: ' at ';
+    font-size: .8em;
+    color: #ffffff7a;
+    padding: 0 0.3em 0 0.05em;
+}
+.about-wrapper .role svg {
+    height: 1em;
+    fill: #fd375b;
+    vertical-align: sub;
+}
+
 .about-wrapper h1,
 .about-wrapper h2,
 .about-wrapper p,
