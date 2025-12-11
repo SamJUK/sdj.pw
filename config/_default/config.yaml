@@ -1,7 +1,7 @@
 baseURL: https://www.sdj.pw/
 languageCode: en-gb
-title: Magento Blog - SDJ.PW
-description: Welcome to SDJ.PW, my technical blog. That covers topics from DevOps/SRE tasks to Magento Development and everything in between.
+title: Magento Development & DevOps Blog | Platform Engineering Insights
+description: Expert insights on Magento 2 development, security, performance optimization, and platform engineering. Practical DevOps solutions, malware analysis, and SRE best practices for eCommerce systems.
 theme: ["PaperMod"]
 
 enableRobotsTXT: true
@@ -48,7 +48,7 @@ params:
     icon: /assets/apple-touch-icon.png
     iconHeight: 35
 
-  description: "Magento Blog - SDJ.PW "
+  description: "Expert Magento 2 development, security, and DevOps insights. Practical guides for platform engineering, performance optimization, malware analysis, and SRE best practices."
 
   profileMode:
     enabled: false
