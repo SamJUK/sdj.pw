@@ -1,17 +1,37 @@
 ---
-title: "Magento 2 - Fixing Missing Products with Elasticsearch 8"
-description: "Have your upgrade to Elasticsearch8 gone pair shaped? This short post will get you back up and running with 5 minutes."
+title: "Magento 2 - Fix Missing Products & Search After Upgrading to Elasticsearch 8"
+description: "After upgrading Magento 2 to Elasticsearch 8 and your products disappeared or search broke? This short post walks through the fixes to get your store working again in minutes."
 date: 2024-04-24T19:00:00+00:00
 tags: ["magento2", "elasticsearch"]
 author: "Me"
 draft: false
 ---
-Have you upgrade to Magento 2.4.6 recently for the improved performance / support lifetime? Or maybe you have upgraded to 2.4.7 where Elasticsearch 8 is the only supported Elasticsearch Version now.
+## What this guide fixes
+
+If, after upgrading Magento 2.4.6+ to use Elasticsearch 8, your **product catalog pages show zero products or your search is broken**, this post walks through the configuration steps required to fix it - including reindexing, enabling the right modules, and updating Elasticsearch settings.
+
+This page is for developers and sysadmins who already maintain a Magento 2 store and need a quick, practical fix for Elasticsearch 8 compatibility issues.
+
+## TL;DR
+If products disappear from category pages or search results after upgrading Magento 2 to Elasticsearch 8:
+
+- Ensure your indexes and cache are up to date
+- Double check your Magento search config (the keys are different from Elasticsearch7!)
+- Make sure the Elasticsearch8 module is installed, for some reason its not included by default
+- Enable support for sorting and aggregation of the `_id` indices if needed
+- Adjust Elasticsearch XPack SSL security settings if required
+
+Most issues come from Elasticsearch 8 defaults being stricter than earlier versions
+
+## Our Experience Upgrading Magento 2 to Elasticsearch 8
 
 We have spotted a major issue post update, where your catalog and search pages might be looking a little sorry for themselves... with ZERO products! Not ideal.
 
 There are a few configuration changes that are required to get Elasticsearch 8 to play nicely with Magento, that are easily overlooked in the upgrade notes (or absent entirely!). Don't forget to reindex and cache clean after each step!
 
+Below are the most common causes we’ve seen for missing products and broken search after an Elasticsearch 8 upgrade, along with how to fix each one.
+
+## Common Errors & What they Mean
 
 ### Index / Cache
 Lets start at the very basics, the data on the catalog search pages are powered by the index and cache. Make sure these are populated and are up to date, as if they are missing, your products wont display.
