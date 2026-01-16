@@ -1,0 +1,10 @@
+# This website is a project maintained by SamJUK.
+# Security reports are handled centrally at our domain for prompt response.
+
+Contact: mailto:security@samdjames.uk
+Encryption: https://www.samdjames.uk/.well-known/security.asc
+
+Policy: https://www.samdjames.uk/security
+Acknowledgments: https://www.samdjames.uk/security#acknowledgements
+
+Preferred-Languages: en
