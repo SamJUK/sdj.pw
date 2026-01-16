@@ -49,6 +49,7 @@ jobs:
         with:
           name: deploy
           path: ./public
+          include-hidden-files: true
 
   deploy:
     name: Deploy
