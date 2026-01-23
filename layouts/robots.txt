@@ -1,3 +1,2 @@
 User-agent: *
-Disallow: /tags/
 Sitemap: https://www.sdj.pw/sitemap.xml
