@@ -1,10 +1,13 @@
-# SDJ.PW
+# 🚧 This repo is archived
 
-> ⚠️ **Archived repository**
->
-> This project has been migrated to my main website: https://www.samdjames.uk/blog/
-> The source code is now located within https://github.com/samjuk/samdjames.uk
-> This repo is no longer maintained.
+This project has moved to my main website.
+This repository is read-only and kept for historical reference.
+
+👉 **New Home:** https://www.samdjames.uk/blog/
+
+👉 **New Code:** https://github.com/samjuk/samdjames.uk
+
+# SDJ.PW
 
 - Personal Technical Blog that covers any/all topics ranging from DevOps to Magento to Software Engineering. 
 - Deployed at [https://www.sdj.pw](https://www.sdj.pw/?utm_source=github&utm_medium=repository&utm_campaign=sdj_pw)
